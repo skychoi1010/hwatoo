@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'yoon_dokripregular';
-    src: url('/fonts/yoondokrip-webfont.woff2') format('woff2'),
-         url('/fonts/yoondokrip-webfont.woff') format('woff'),
-         url('/fonts/yoondokrip-webfont.ttf') format('truetype'),
-         url('/fonts/yoondokrip-webfont.otf') format('opentype');
+    src: url('fonts/yoondokrip-webfont.woff2') format('woff2'),
+         url('fonts/yoondokrip-webfont.woff') format('woff'),
+         url('fonts/yoondokrip-webfont.ttf') format('truetype'),
+         url('fonts/yoondokrip-webfont.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
