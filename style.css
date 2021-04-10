@@ -1,0 +1,79 @@
+article{
+    display: flex;
+    flex-direction: column;
+    font-family: yoon_dokripregular;
+}
+
+#A{
+  font-family: yoon_dokripregular;
+  font-style: normal;
+}
+
+#B{
+  font-family: Nanum Square;
+}
+
+.question{
+    display: none;
+}
+
+.result{
+    display: none;
+}
+
+.friend{
+    display: none;
+}
+
+.enemy{
+    display: none;
+}
+
+.progress-bar{
+  width: calc(100/12*1%);
+  background-color: red;
+}
+
+#question_img{
+    width: 200.314 960 629 92px;
+    height: 132.283 464 566 93px;
+    margin: 0 auto;
+}
+
+#img_friend{
+    width: 200.314 960 629 92px;
+    height: 132.283 464 566 93px;
+    margin: 0 auto;
+}
+
+#img_enemy{
+    width: 200.314 960 629 92px;
+    height: 132.283 464 566 93px;
+    margin: 0 auto;
+}
+#img{
+    width: 200.314 960 629 92px;
+    height: 132.283 464 566 93px;
+    margin: 0 auto;
+}
+
+.share{
+    margin: 0 auto;
+}
+
+.kakao_ad{
+    width: 320px;
+    margin: 0 auto;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.banner_img{
+    width: 300px;
+
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-189966259-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-189966259-1');
+</script>
+    <!-- 검색 키워드(제목) -->
+    <title>화투mbti</title>
+
+    <!-- 사이트 설명 -->
+        <meta name="description" content="화투로 알아보는 나의 MBTI">
+        <!-- 오픈그래프 -->
+            <meta property="og:type" content="website">
+            <meta property="og:title" content="화투mbti">
+            <meta property="og:description" content="화투로 알아보는 나의 MBTI">
+            <meta property="og:image" content="https://hwatusignal.netlify.app/스티브잡스.jpg">
+            <meta property="og:url" content="https://hwatusignal.netlify.app/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css'/>
+
+</head>
+<body class="container">
+<!-- 시작화면 -->
+
+    <article class = "start">
+        <h1 class = "mt-5 text-center" id="title">화투로 알아보는 나의 MBTI</h1>
+        <button type="button" class="btn btn-secondary mt-5" onclick='start();'>테스트 시작하기</button>
+    </article>
+<!-- 문제화면 -->
+    <article class = "question">
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h2 id="title" class="text-center">문제</h2>
+        <input id = "type" type="hidden" value="EI">
+        <img id="question_img" class="mt-5" src="01월_1.png" alt="title">
+        <button id = "A" type="button" class="btn btn-secondary mt-5">"A"</button>
+        <button id = "B" type="button" class="btn btn-secondary mt-5">"B"</button>
+        <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
+    </article>
+<!-- 결과화면 -->
+    <article class="result">
+        <img id="img" class="mt-5" src="스티브 잡스.jpg" alt="animal">
+        <h2 id="animal" class="text-center mt-5"> 화투패</h2>
+        <h2 id="animal_1" class="text-center mt-5"> "자네는.."</h2>
+        <h3 id="explain" class="text-align:left;"> 설명</h3>
+        <h2 id="animal_2" class="text-center mt-5"> "이 친구와 친해지고 싶다면 주목하게나"</h2>
+        <h3 id="animal_explain" class="text-align:left;"> 설명</h3>
+        <h2 id="friend_explain" class="text-center mt-5"> 죽마고우 각!</h2>
+        <h3 id="animal_3" class="text-center mt-5"> "마당을 나온 뿌링클"</h3>
+        <img id="img_friend" class="mt-1" src="스티브 잡스.jpg" alt="friend">
+        <h2 id="enemy_explain" class="text-center mt-5"> 파국이다 파국!!</h2>
+        <h3 id="animal_4" class="text-center mt-5"> "사슴 같아 보이는 고라니이잉"</h3>
+        <img id="img_enemy" class="mt-5" src="스티브 잡스.jpg" alt="enemy">
+    </article>
+
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="share addthis_inline_share_toolbox"></div>
+
+    <!-- 카카오 애드핏 -->
+    <article class = "kakao_ad mt-5">
+        <ins class="kakao_ad_area" style="display:none;"
+        data-ad-unit    = "DAN-fX6MeTK1dVC3OmYs"
+        data-ad-width   = "320"
+        data-ad-height  = "100"></ins>
+    </article>
+
+    <!-- 수주받은 광고 -->
+    <a class="mt-5 banner" href = "https://tumblbug.com/togetoge/catalog? utm_source=animal_test&utm_medium=web_lecture&utm_campaign=togetoge">
+        <img class= "banner_img" src= "banner.png" alt="banner">
+    </a>
+
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+<!-- 앞 성질의 점수를 네가지 타입별로 저장하는 칸, 밖으로 보이진 않지만 히든 인풋으로 정보를 저장 -->
+    <input type="hidden" id = "EI" value="0">
+    <input type="hidden" id = "SN" value="0">
+    <input type="hidden" id = "TF" value="0">
+    <input type="hidden" id = "JP" value="0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script>
+    // 문제번호
+    var num = 1;
+    var q= {1: {"question_img": "01월_1.png",
+            "title": "친구들이랑 게임을 할 때 다들 집중한 건지 상당히 조용하군. 이때 나는...", "type": "EI",
+            "A": "비지 않는 라디오를 추구하오hello yoon yoon_dokripregular. 조용하면 뻘쭘하니까 말을 튼다.",
+            "B": "그대로 말없이 게임에 푹 집중하오."},
+
+            2: {"question_img": "02월_1.png",
+            "title": "보드게임 카페 갔을 때 자네는 어떤 게임을 고르겠는가?", "type": "SN",
+            "A": "기존에 아는 게임 중 최애 게임",
+            "B": "새로운 신상 게임"},
+
+            3: {"question_img": "03월_1.png",
+            "title": "화투 치다가 친구가 두 장을 뒤집었을 때 자네는...", "type": "TF",
+            "A": "절대 봐줄 수 없다. 지나칠래야 지나칠 수 없음요.",
+            "B": "어쩔 수 없지. 좋은 게 좋은 거지~^^ "},
+
+            4: {"question_img": "04월_1.png",
+            "title": "보드게임 카페 종료 시간이 15분 남았소! 이때 자네는...", "type": "JP",
+            "A": "15분 안에 할 수 있는 게임을 얼른 찾아보자.",
+            "B": "그냥 쭉 하다가 시간 끝나면 정리하거나 대충 연장하자."},
+
+            5: {"question_img": "05월_1.png",
+            "title": "존맛탱 맛집을 발견했소! 나는...", "type": "EI",
+            "A": "“여러분 여기 좀 보세요 진짜 제가 보장하는 맛집임!!!”	동네방네 소문을 내는 홍보쟁이",
+            "B": "“오, 이 집 쫌 맛있는데...?”라며 혼자 생각한다."},
+
+            6: {"question_img": "06월_1.png",
+            "title": "친구에게 내 원픽 게임을 소개해줄 때 자네는...", "type": "SN",
+            "A": "“이 게임은 ~~~하고 ~~~해서 완전 재밌더라!”라며 디테일을 살린다.",
+            "B": "“이 게임 그냥 넘 재밌삼!” 라며 짧고 강력하게 일축한다."},
+
+            7: {"question_img": "07월_1.png",
+            "title": "게임이 끝났다. 보드게임을 정리할 때 자네는...", "type": "JP",
+            "A": "원래 있었던 대로 깔쌈하게 정리한다.  ",
+            "B": "그냥 다 넣어놓기만 하면 장땡이다."},
+
+            8: {"question_img": "08월_1.png",
+            "title": "게임을 할 때 자네는...", "type": "TF",
+            "A": " 게임에서 이기냐 지냐가 제일 중요하오.",
+            "B": "내가 이 게임을 즐겼으면 됐다"},
+
+            9: {"question_img": "09월_1.png",
+            "title": "새로운 사람들과 만나는 술자리! 미팅!", "type": "EI",
+            "A": "친구 사귀러 나가겠소!",
+            "B": "굳이...? 이미 친한 사람들이랑 더 놀고 싶소!"},
+
+            10: {"question_img": "10월_1.png",
+            "title": "고스톱을 칠 때 승리의 기운이 스멀스멀 올라올라고 막 하는데!", "type": "SN",
+            "A": "그래도 살짝 불안하다... 안정적으로 가자.",
+            "B": "묻고 GO로 가! 고고고"},
+
+            11: {"question_img": "11월_1.png",
+            "title": "게임 시간! 나는 오늘 OO게임이 너무 땡기는데, 친구들이 다른 게임을 하자고 한다면?", "type": "TF",
+            "A": "사람들에게 OO게임을 하자고 팍팍 어필한다.",
+            "B": "친구들이 원하는 게임에 그냥 맞춰춘다."},
+
+            12: {"question_img": "12월_1.png",
+            "title": "친구들이랑 방탈출 하러 가기로 했다.", "type": "JP",
+            "A": "가는 길, 할인 방법을 찾고 예약까지 미리 해두는 게 마음이 편하다. ",
+            "B": "그냥 간다. 일단 가보고 사람 많으면 기다리지 뭐. 그게 편하다! "}
+
+
+    }
+    // mbti 결과를 설명이랑 이미지
+    var result={
+             "ISTJ": {"animal": "계획만 세워도 오늘 공부의 반은 했다! 프로계획러 <strong>킹갓제너럴 우직한 소</strong>",
+
+                    "explain": "시간 약속을 아주 잘 지키는군.<br>자네는 집에서 노는 걸 좋아한다네. 혼자서도 재밌게 놀 줄 아는 친구야.<br>인간관계에 쿨하지만 내 사람이라고 생각하면 책임감과 헌신으로 진심을 다한다네.<br>특유의 집중력, 침착성, 논리력으로 추리게임에서 장원급제를 휩쓰는 친구라네.<br>팀전보다는 내 실력 발휘할 수 있는 개인전을 좋아할 걸세.<br>그대에게 규칙은 지키라고 있는 것. 반칙은 절대 하지 않는다네.<br>새로운 맛집 시도해보는 것보다 원래 가던 초특급 대박 단골 맛집을 선호하는군.",
+
+                    "animal_explain":"시간 약속 잘 지켜주게나.<br>무뚝뚝해보여도 이 친구가 사실은 정이 많다네. 요즘 말로… <<츤데레>>라고 하는가?<br>당일에 갑자기 약속 잡는 것보다는 미리미리 약속 잡는 걸 선호한다네",
+
+                    "img": "ISTJ.png",
+
+                    "img_friend": "ENFP.png",
+
+                    "img_enemy": "ENFJ.png",
+
+                    "animal_3": "후지산 대폭발 인싸 불가사리",
+
+                    "animal_4": "강강술래 세계선수권"},
+
+            "ISFJ": {"animal": "이 계획으로 밀고가고는 싶지만, 너가 그렇게 하고 싶다면.. 배려왕 <strong>마당을 나온 뿌링클</strong>",
+
+                    "explain": "아무것도 안해도 인기가 많아 사람들이 주변으로 몰리는군.<br>다른 사람들 감정을 잘 알아채고 공감도 잘해준다네. 드라마 보면 주인공 감정에 과몰입하는 친구로군.<br>혼자 놀기 달인일세. 집에서도 아주 즐겁게 논다네.자네는 준비성이 철저해서 여행 갈 때 짐이 한가득이야.<br>부탁받으면 거절 잘 못하면서 막상 자네는 남에게 부탁하는 걸 어려워하는군.<br>카페를 가면 원래 좋아하던 익숙한 메뉴로 주문한다네.",
+
+                    "animal_explain":"이 친구는 꼼꼼하게 계획 짜서 알차게 노는 걸 좋아할 걸세. <br>혼자 집에서 노는 시간을 소중히 여기는 친구라네. 허나 밖에 나가 노는 것도 좋아한다네.<br>친구들이 싸우면 꽤나 당황할 걸세. 이이는 다들 사이 좋게 지내길 바란다네.",
+
+                    "img": "ISFJ.png",
+
+                    "img_friend": "ENTP.png",
+
+                    "img_enemy": "ENTJ.png",
+
+                    "animal_3": "통통 튀는 물수제비",
+
+                    "animal_4": "효율갑-티바 세마리 치킨"},
+
+            "INFJ": {"animal": "계획적으로 생활하는 것이 곧 삶의 기쁨 스케쥴러 <strong>마이웨이 SSAP 선비</strong>",
+
+                    "explain": "공감을 잘하고 경청에 능하다네.<br>여럿이서 노는 것보다는 마음 맞는 친구와 단 둘이 노는 것을 선호하는군.<br>배려도 잘하고 인내심도 많은 성숙한 친구일세.놀 때는 계획을 꼼꼼히 세우는 것을 좋아한다네.<br>이런저런 생각을 아주 많이 하는 친구로군.<br>자네는 주관이 뚜렷해서 다른 이들에게 휘둘리지 않는다네. 현실의 유행에도 큰 관심이 없을 걸세.",
+
+                    "animal_explain":"이 친구가 낯을 좀 가리는데 이해해주게나. 먼저 다가와주면 속으로 신나할 것이야. <br>이이가 겉으로는 차가워보여도 속은 정말 따뜻하다네. 지내다보면 첫인상과 정말 다를 걸세.<br> 모르는 사람들 그득한 모임보다는 친한 친구들과 노는 것을 선호한다네. ",
+
+                    "img": "INFJ.png",
+
+                    "img_friend": "ESTP.png",
+
+                    "img_enemy": "ESTJ.png",
+
+                    "animal_3": "조잘조잘 웃음보따리",
+
+                    "animal_4": "귀욤뽀쨔악한 참새"},
+
+            "INTJ": {"animal": "치타는 다 계획이 있구나.. 이 모든 것은 나의 큰 그림! 선구자 <strong>어딘가 싱거운 두루치기</strong>",
+
+
+                    "explain": "사람들이 많으면 낯가리지만 주도적인 역할도 은근 많이 한다네.<br>그대는 여행 가기 전 계획을 아주 꼼꼼히 짜는군. 플랜 B까지 마련해두는 치밀한 친구일세.<br> 돈 낭비는 절대 하지 않아. 돈 관리도 철저하게 잘하는군.<br>자네는 친한 친구가 고민을 얘기하면 공감보다는 해결책을 제시하는군. 관심 없으면 공감하는 ‘척’을 하지.<br> 인간관계에 있어 신중한 친구로군.<br> 다른 사람의 시선을 크게 신경쓰지 않는다네. 누가 뭐래도 자네는 잘났으니까.",
+
+                    "animal_explain":"이 친구가 얼굴, 이름을 잘 기억 못해도 이해해주게나. 나쁜 뜻이 있는 것이 아니라 진짜 그냥 기억을 못하는 것뿐이라네. <br> 이이가 감정 표현에 서툴러도 속으로는 고마워하는 것들이 많다네.<br> 가식이나 거짓말을 좋아하지 않는다네. 솔직하게 대해주게나.",
+
+                    "img": "INTJ.png",
+
+                    "img_friend": "ESFP.png",
+
+                    "img_enemy": "ESFJ.png",
+
+                    "animal_3": "왓썹 호랑나비! 으아아~ 들이대!",
+
+                    "animal_4": "쵸오큼 더 귀욤빤쨕한 동박새"},
+
+            "ISTP": {"animal": "계획은 계획일 뿐. 목표가 확실하면 된다!  상황에 따라 움직이는 유연한 <strong>앞뒤가 똑같은 달래달래 진달래</strong>",
+
+
+                    "explain": "앞과 뒤가 똑같다네. 가식이라곤 1도 없는 친구일세.<br> 무뚝뚝해보여도 친한 사람들에게는 한없이 다정하다네. <br>관심 없는 것에는 눈길조차 주지 않는군. 허나 좋아하는 것에는 영혼을 바친다네.<br>그대는 노력을 절약하려 하는군. 어떤 일이든 노력에 비해 효율이 좋을 걸세.<br>그대에게서 편견, 고정관념이라곤 찾아볼 수 없어.<br>가려고 했던 맛집 문이 닫아도 자네에겐 별로 대수롭지 않아. 아, 계획 자체가 없었을 수도…",
+
+                    "animal_explain":"이 친구가 감정표현이 좀 서툴러도 이해해주게나. 속으로는 정말 좋아하고 있을 수도 있다네.<br>혼자만의 시간을 존중해줘야 한다네.<br>마음에 없는 말은 못한다네. 이이가 하는 말은 다 진심일 걸세.",
+
+                    "img": "ISTP.png",
+
+                    "img_friend": "ENFJ.png",
+
+                    "img_enemy": "ENFP.png",
+
+                    "animal_3": "강강술래 세계선수권",
+
+                    "animal_4": "후지산 대폭발 인싸 불가사리"},
+
+            "ISFP": {"animal": "모로 가도 서울로만 가면 돼! 계획 하나가 틀어져도 긍정적인 온화한 <strong>사슴 같아 보이는 고라니이잉</strong>",
+
+
+                    "explain": "다정하고 친절하고 배려심이 깊다네.<br>자네는 다른 이들의 감정을 알아채고 공감해주는 데 뛰어난 능력을 가졌군.<br>뭐 할지, 뭐 먹을지 고르는 걸 꽤나 어려워하는군.<br>집에서 노는 걸 너무 좋아하지만 막상 또 나가면 기똥차게 놀 걸세.<br>모든 일을 미룰 수 있을 때까지 미룬다네.<br>즉흥적인 성격을 가졌군. 그대에게는 현재를 즐기는 게 최우선이야.",
+
+                    "animal_explain":"표현을 잘 못해도 사실은 정이 많은 친구라네.<br> 먼저 다가와주면 속으로 덩실덩실 춤추고 있을 걸세.<br>이 친구와 연락이 잘 안 되어도 이해해주게나. 별 뜻은 없고 그저 조금 귀찮아할 뿐이라네.",
+
+                    "img": "ISFP.png",
+
+                    "img_friend": "ENTJ.png",
+
+                    "img_enemy": "ENTP.png",
+
+                    "animal_3": "효율갑-티바 세마리 치킨",
+
+                    "animal_4": "통통 튀는 물수제비"},
+
+            "INFP": {"animal": "내 계획이 가장 나답고 완벽한 계획이야. 나잘알 <strong>그네뛰기 국가대표</strong>",
+
+
+                    "explain": "마음이 따뜻하고 이해심도 깊다네.<br>자네는 초반에는 낯을 가리지만 친해지고 나면 급 활발해진다네.<br>집에서 혼자 놀기에 통달한 친구로군. 먹을 것과 누울 곳만 있으면 하루 48시간 알차게 놀 수 있을 걸세.<br>한없이 관대해보여도 내적으로는 확고한 신념을 가지고 있군.<br>내일의 나를 믿고 오늘은 일단 미루고 본다네.<br>어떤 것에 한 번 빠지면 끝도 없이 빠진다네. 취미생활을 아주 열정적으로 하지.",
+
+                    "animal_explain":"진실되고 진정성 있는 모습으로 다가와주게나.<br>이 친구는 믿고 의지하고 싶은 사람이 생기면 일편단심이라네. <br> 친구들이 싸우면 정말 힘들할 걸세. 모두 평화롭게 지내주게나.",
+
+                    "img": "INFP.png",
+
+                    "img_friend": "ESTJ.png",
+
+                    "img_enemy": "ESTP.png",
+
+                    "animal_3": "귀욤뽀쨔악한 참새",
+
+                    "animal_4": "조잘조잘 웃음보따리"},
+
+            "INTP": {"animal": "계획은 여러개 있을 수록 좋아! a안부터 d안까지 계획을 만들어 움직이는 <strong>결정장애 무야호</strong>",
+
+
+                    "explain": "말이 없다가도 관심 있는 주제가 나오면 급수다쟁이가 되는군.<br>자네는 새로운 사람과의 만남보다는 친한 친구들과의 만남을 선호한다네<br>그대만의 개성과 그대만의 세계를 추구하는군. 남들 다 따라가는 유행은 그닥 반기지 않을 걸세.<br>놀 때 계획을 철저하게 짜놨더라도 즉흥적으로 계획을 바꿀 때가 많다네.<br>다같이 하는 게임보다는 그대의 실력을 온전히 발휘할 수 있는 갠플 게임을 즐기곤 하지.<br>그대는 합리적인 걸 너무 중시하여 ‘오늘 뭐 먹지’ 같은 사소한 결정도 어려워한다네.",
+
+                    "animal_explain":"이 친구는 마음에 없는 소리를 잘 못한다네. 그만큼 이 친구가 한 말들은 다 진심이라네.<br>소중한 사람일수록 위로보다는 해결책을 제시하는 경향이 있다네. 이것이 애정표현이니 어여삐 봐주시게. <br> 혼자 보내는 시간을 존중해주게나.",
+
+                    "img": "INTP.png",
+
+                    "img_friend": "ESFJ.png",
+
+                    "img_enemy": "ESFP.png",
+
+                    "animal_3": "쵸오큼 더 귀욤빤쨕한 동박새",
+
+                    "animal_4": "왓썹 호랑나비! 으아아~ 들이대!"},
+
+            "ESTP": {"animal": "백문이불여일견, 계획은 세우되 행동이 우선! 일단 뭐라도 해봐야 직성이 풀리는 <strong>조잘조잘 웃음보따리</strong>",
+
+
+                    "explain": "술자리 가면 항상 자네가 분위기 띄우고 있을 걸세. <br>즉흥적이고 스릴 있는 것들을 좋아한다네.<br>게임, 내기할 때 자네가 제일 신나 있군.  <br>그대에게는 재미와 즐거움이 최고 목적이야. 같이 있으면 개꿀잼 보장이라네.<br>선입견 없는 아주 관대한 친구로군.<br>자기도 모르게 조장, 반장 되는 경우가 많다네.<br>오늘 할 일을 내일로 미룬다네. 과연 내일 정말로 할지는 모르겠군 허허.",
+
+                    "animal_explain":"드립 치면 많이 웃어주시게나. 드립 한 번 성공하면 뿌듯해서 잠도 못 잔다네.<br>친한 사람한테는 막 대하고 장난도 많이 친다네. 애정 표현이니 오해하지 말아주시게.<br>이 친구는 돌려 말하면 잘 못 알아듣는다네. 직접적으로 말해주게나.",
+
+                    "img": "ESTP.png",
+
+                    "img_friend": "INFJ.png",
+
+                    "img_enemy": "INFP.png",
+
+                    "animal_3": "마이웨이 SSAP 선비",
+
+                    "animal_4": "그네뛰기 국가대표"},
+
+            "ESFP": {"animal": "매일 반복되는 일상이 지루해! 계획적인건 싫어! 언제나 새로운 자극제를 찾아다니는 <strong>왓썹 호랑나비! 으아아~ 들이대!</strong>",
+
+
+                    "explain": "친절하고 낙천적인 그대, 주변 이들을 끌어들이는 매력이 넘친다네.<br>사람들 만나서 노는 걸 좋아하는 그대에게 코로나 역병은 큰 장애물일 것이야.<br>아주 단순한 친구일세. 귀도 얇아.<br>그대는 수다쟁이야. 어디서든 분위기 띄우는 건 자네 담당일 걸세. <br>정이 많아서 거절도 잘 못하는군.<br> 틀에 박힌 것보다는 자유로운 것을 좋아한다네.<br>무조건 재밌는 게 장땡이야. 진지한 상황을 못 견딜 걸세.",
+
+                    "animal_explain":"연락 확인이 느려도 이해해주게나. 그대들이 싫어서가 절대 아니라네. <br>이이가 '아무거나’라고 하면 진짜 아무거나 다 좋다는 뜻이라네.<br>이 친구가 좀 덜렁거려도 많이 챙겨주게나.",
+
+                    "img": "ESFP.png",
+
+                    "img_friend": "INTJ.png",
+
+                    "img_enemy": "INTP.png",
+
+                    "animal_3": "어딘가 싱거운 두루치기",
+
+                    "animal_4": "결정장애 무야호"},
+
+            "ENFP": {"animal": "반짝이는 아이디어로 새로운 계획을 짜 지루할 틈이 없는 <strong>후지산 대폭발 인싸 불가사리</strong>",
+
+
+                    "explain": "밝고 긍정적이어서 주변 친구들이 자네를 무척 좋아할 걸세.<br>감정이 풍부하고 그 감정이 얼굴에 다 드러나는군.<br>말도 많고 마냥 즐거워 보이는데 실제로 대화해보면 생각이 깊은 친구라네.<br>사람들을 만나는 것을 즐기지만 혼자만의 시간도 꼭 필요로 한다네. <br>충동구매에 소질이 있군.<br>일일이 계획하는 것보다는 그때그때 내키는 대로 하는 편이라네.",
+
+                    "animal_explain":"이 친구는 밀당을 별로 안 좋아한다네. 밀면 그대로 밀려나버릴 걸세. 밀당 없이 진심으로 대해주게나. <br>외유내강 아니고 외강내유. 겉으로는 강해보여도 속은 여린 친구라네.<br> 이 친구가 다 괜찮다고 하더라도 최소한의 예의는 지켜주게나.",
+
+                    "img": "ENFP.png",
+
+                    "img_friend": "ISTJ.png",
+
+                    "img_enemy": "ISTP.png",
+
+                    "animal_3": "킹갓제너럴 우직한 소",
+
+                    "animal_4": "앞뒤가 똑같은 달래달래 진달래"},
+
+            "ENTP": {"animal": "새로운 도전은 언제나 좋아! 새롭게 정해진 계획을 당황하지 않고 즐기는 <strong>통통 튀는 물수제비</strong>",
+
+
+                    "explain": "창의력과 상상력이 풍부한 친구로군.<br>자네에게 ‘재미’는 너무 중요해. 각종 유머와 드립에도 능하지.<br>친구들끼리 뭐 먹을지 결정 못하고 있을 때 자네가 항상 기똥찬 의견을 제시하곤 하지.<br>한 시간이면 할 일은 일주일 동안 하고 일주일 걸릴 일은 하루만에 해내는 신기한 친구일세.<br>자존감과 자기애로 똘똘 뭉친 친구로군. 자네 생각에도 자네가 진심 대단하지 않은가?<br>겉으로는 강해보이지만 그대가 아끼는 이들에게는 한없이 약해진다네.",
+
+                    "animal_explain":"이 친구는 논리적으로 이야기하는 걸 즐긴다네. 토론배틀은 언제나 환영할 걸세.<br>이이는 친해지고 싶으면 놀리고 장난치는 편이라네. <br>피상적인 관계보다는 가식 없고 진실된 관계를 원할 걸세.",
+
+                    "img": "ENTP.png",
+
+                    "img_friend": "ISFJ.png",
+
+                    "img_enemy": "ISFP.png",
+
+                    "animal_3": "마당을 나온 뿌링클",
+
+                    "animal_4": "사슴 같아 보이는 고라니이잉"},
+
+            "ESTJ": {"animal": "a부터 z까지 계획해 목표를 향해 나아가는 <strong>귀욤뽀쨔악한 참새</strong>",
+
+
+                    "explain": "그대는 친화력이 좋고 사람들 만나는 걸 좋아한다네.<br>자네는 리더십이 뛰어나서 뭘 해도 항상 캐리하는군. <br>일을 계획해서 추진하는 능력이 아주 뛰어난 친구일세. 놀러갈 때 예약이랑 계획은 항상 자네 담당이지.<br>뭐든 딱딱 떨어지고 순리대로 진행되는 걸 좋아하는군. 갑자기 약속이 미뤄지거나 가기로 했던 맛집 문이 닫으면 꽤나 당황할 걸세. <br>그대는 완벽을 추구한다네. 답장 하나 할 때도 맞춤법 신경 써서 보내곤 하지.책임감이 강해서 맡은 일은 척척 해내는군.",
+
+                    "animal_explain":"이 친구가 잔소리 하는 건 다 애정 표현이라네.<br>신나서 계획 짜는데 반응 없으면 서운해할 걸세.<br>이이가 겉으로는 차가워보여도 의리와 정이 넘치는 친구라네.",
+
+                    "img": "ESTJ.png",
+
+                    "img_friend": "INFP.png",
+
+                    "img_enemy": "INFJ.png",
+
+                    "animal_3": "그네뛰기 세계선수권",
+
+                    "animal_4": "마이웨이 SSAP선비"},
+
+            "ESFJ": {"animal": "주어진 목표를 이루기 위해 모두가 함께 성장해나가길 원하는 페이스메이커 <strong>쵸오큼 귀욤빤쨕한 동박새</strong>",
+
+
+                    "explain": "사람들과 만나서 노는 것을 진심으로 좋아한다네. 술자리 가면 항상 볼 수 있는 친구로군.<br>자네는 대화를 이끌어나가는 쪽이야. 쫑알쫑알 수다쟁이라네.<br>다른 이들과 관련된 것엔 눈치가 빠르지만 자네 일에는 둔감하군.<br>친구들이 얘기할 때 호응을 제일 많이 해준다네. 거의 방청객이야.<br>혼자 하는 게임보다는 다같이 즐기는 게임을 선호하는군.<br>다른 이들에게 관심이 많고 정도 많군. 사람들 챙기는 것에 아주 능한 친구일세.",
+
+                    "animal_explain":"이 친구는 스트레스 받으면 누구라도 만나서 놀아야 한다네. 많이 만나주시게나. <br>칭찬해주면 무척 좋아할 걸세. <br>상대방 반응을 꽤나 신경쓰는 친구라네. 적극적으로 호응해주시게나.",
+
+                    "img": "ESFJ.png",
+
+                    "img_friend": "INTP.png",
+
+                    "img_enemy": "INTJ.png",
+
+                    "animal_3": "결정장애 무야호",
+
+                    "animal_4": "어딘가 싱거운 두루치기"},
+
+            "ENFJ": {"animal": "내 계획은 모두 조절할 수 있어! 너와 맞추기 위해서라면. 평화주의자 <strong>강강술래 세계선수권</strong>",
+
+
+                    "explain": "- 사람들과 재밌게 노는 것을 진심으로 좋아하는군. <br>정이 많고 따뜻한 친구일세. 주변 이들을 배려하고 챙기는 데 능해.<br>그대에게는 게임에서 이기는 것도 중요하지만 싸우지 않고 재밌게 즐기는 게 더 중요하다네.<br>친구들끼리 먹고 싶은 메뉴가 다르면 양보하는 편이군.<br>친구들이 힘들어하면 자네 일처럼 여기고 진심으로 걱정할 걸세.<br> 아무도 하지 않는 일이 있으면 자네가 도맡아서 하는 편이군.",
+
+                    "animal_explain":"그대들과 만나서 노는 걸 너무 좋아하는 친구라네. 많이들 놀아주시게나. <br>칭찬해주고 애정 표현 해주면 아주 좋아할 걸세.<br> 이 친구는 모두가 평화롭길 바란다네. 싸우지들 마시게나.",
+
+                    "img": "ENFJ.png",
+
+                    "img_friend": "ISTP.png",
+
+                    "img_enemy": "ISTJ.png",
+
+                    "animal_3": "앞뒤가 똑같은 달래달래 진달래",
+
+                    "animal_4": "킹갓제너럴 우직한 소"},
+
+            "ENTJ": {"animal": "내 사전에 결정장애란 없다! 선택의 순간, 단호하게 결정을 내리는 판사 <strong>효율갑 - 티바 세마리 치킨</strong>",
+
+
+                    "explain": "사람들을 사귀는 데 적극적이라네. 밝고 활발해서 대화도 항상 주도하는 편이군.<br>그대는 선천적 지도자라네. 리더십이 출중해.<br>자기 자신이 대단한 걸 잘 아는 친구일세. 자존감이 높은 그대에게서는 열등감이라곤 찾아볼 수 없어.<br>자네는 뭐든지 체계적이고 완벽한 걸 좋아하는군. <br>여행 갈 때 계획 완벽하게 짜고 예약까지 다 해놓는 친구라네.<br>자네가 한 번 내 사람이라고 생각하면 그 사람에게는 아낌없이 퍼준다네.<br>",
+
+                    "animal_explain":"멀리서 보면 카리스마 넘치지만 가까이서 보면 이 친구만큼 다정한 사람도 없을 걸세.<br>이 친구는 자기 말에 동의해주면 아주 좋아한다네.<br>이 친구만큼 효율을 사랑하는 사람도 없다네. 다들 효율적으로 행동해주면 고맙겠네.<br>",
+
+                    "img": "ENTJ.png",
+
+                    "img_friend": "ISFP.png",
+
+                    "img_enemy": "ISFJ.png",
+
+                    "animal_3": "사슴 같아 보이는 고라니이잉",
+
+                    "animal_4": "마당을 나온 뿌링클"}
+
+    }
+    // 시작화면 : 시작화면 누르면 숨기고, 문제 보여줌
+       function start() {
+           $(".start").hide();
+           $(".question").show();
+           next();
+       }
+    //    a를 클릭하면 타입 정보를 가져와서 1을 올림
+       $("#A").click(function(){
+           var type = $("#type").val();
+           var preValue = $("#"+type).val();
+           $("#"+type).val(parseInt(preValue)+1);
+           console.log(parseInt(preValue)+1)
+           next();
+       });
+    //    b는 점수 추가 안됨
+       $("#B").click(function(){
+           next();
+       });
+    // 12문제 다 풀면 문제 숨기고 결과 노출
+    // 각 속성마다 2를 넘어가는 결과값 부여
+    // 결과값 경고창으로 보여주고, 그 후에 이미지랑 설명 노출
+       function next() {
+           if (num==13){
+               $(".question").hide();
+               $(".result").show();
+               var mbti = "";
+               ($("#EI").val() < 2) ? mbti+="I" : mbti+="E";
+               ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
+               ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
+               ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
+               alert(mbti);
+
+               if (result [mbti] == "ENTJ"){
+
+               }
+               $("#img").attr("src",result[mbti]["img"]);
+               $("#animal").html(result[mbti]["animal"]);
+               $("#explain").html(result[mbti]["explain"]);
+               $("#animal_explain").html(result[mbti]["animal_explain"]);
+               $("#friend_explain").html(result[mbti]["friend_explain"]);
+               $("#animal_3").html(result[mbti]["animal_3"]);
+               $("#animal_4").html(result[mbti]["animal_4"]);
+               $("#img_friend").attr("src",result[mbti]["img_friend"]);
+               $("#img_enemy").attr("src",result[mbti]["img_enemy"]);
+               $("#enemy_explain").html(result[mbti]["enemy_explain"]);
+           }
+        //    문제 푸는 동안에는 진행도 보여줌
+        // q라는 js옵젝에서 가져오고, 문제 자연스레 넘어감
+           else{
+            $(".progress-bar").attr('style', 'width: calc(100/12* '+(num-1)+'%)');
+            $("#title").html(q[num]["title"]);
+            $("#type").val(q[num]["type"]);
+            $("#A").html(q[num]["A"]);
+            $("#B").html(q[num]["B"]);
+            $("#question_img").attr("src", q[num]["question_img"]);
+            num++;
+           }
+       }
+   </script>
+   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6025167c9b6cb0ac"></script>
+</body>
+</html>
