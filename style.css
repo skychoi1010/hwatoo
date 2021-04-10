@@ -1,24 +1,63 @@
 article{
     display: flex;
     flex-direction: column;
-    font-family: yoon_dokripregular;
 }
 
-#A{
+button{
   font-family: yoon_dokripregular;
-  font-style: normal;
 }
 
-#B{
+p{
   font-family: Nanum Square;
+  font-weight: lighter;
+  color: rgb(112 112 112);
+}
+
+html{
+  font-size: 10px;
+}
+
+#title{
+  font-size: 3.0rem;
+}
+
+.btn{
+  font-family: yoon_dokripregular;
+  font-size: 2.5rem;
+}
+
+#count{
+  color: rgb(142 142 142);
 }
 
 .question{
     display: none;
+    font-family: yoon_dokripregular;
 }
 
 .result{
     display: none;
+}
+
+#row_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.animal .friend{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.animal .enemy{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-grow: 1;
 }
 
 .friend{
@@ -29,32 +68,77 @@ article{
     display: none;
 }
 
+.result{
+  font-family: yoon_dokripregular;
+}
+
 .progress-bar{
   width: calc(100/12*1%);
-  background-color: red;
+  min-height: 17px;
+  background-color: rgb(227 30 10);
+  border-radius: 70px 70px 70px 70px;
+}
+
+.progress{
+  min-height: 16.8px;
+  border-radius: 70px 70px 70px 70px;
+  background-color: rgb(249 246 246);
+  -webkit-box-shadow: 0px 1px 1px 1px #cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 1px 1px 1px #cccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 1.7px 3px 1px #cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.title_text{
+  font-family: yoon_dokripregular;
+  text-align: left;
+}
+
+.subtitle_text{
+  font-family: yoon_dokripregular;
+  text-align: left;
+}
+
+#share{
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 #question_img{
     width: 200.314 960 629 92px;
     height: 132.283 464 566 93px;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 #img_friend{
     width: 200.314 960 629 92px;
     height: 132.283 464 566 93px;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 #img_enemy{
     width: 200.314 960 629 92px;
     height: 132.283 464 566 93px;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
+
 #img{
     width: 200.314 960 629 92px;
     height: 132.283 464 566 93px;
     margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
 .share{

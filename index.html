@@ -34,39 +34,53 @@
 <!-- 시작화면 -->
 
     <article class = "start">
-        <h1 class = "mt-5 text-center" id="title">화투로 알아보는 나의 MBTI</h1>
-        <button type="button" class="btn btn-secondary mt-5" onclick='start();'>테스트 시작하기</button>
+      <div class="title_text">
+          <h1 class = "mt-5 text-left">소인,</h1>
+      </div>
+      <div class="subtitle_text">
+        <h3 class = "mt-5 text-left">그대의 성질을<br>화투로 간파하겠노라 -.</h3>
+      </div>
+        <button type="button" class="btn btn-secondary mt-5" onclick='start();'>시작하거라!</button>
     </article>
 <!-- 문제화면 -->
     <article class = "question">
         <div class="progress mt-5">
             <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
+        </div><br><br>
         <h2 id="title" class="text-center">문제</h2>
         <input id = "type" type="hidden" value="EI">
         <img id="question_img" class="mt-5" src="01월_1.png" alt="title">
+        <h2 id="count" class="mt-5 text-center">1/12</h2>
         <button id = "A" type="button" class="btn btn-secondary mt-5">"A"</button>
         <button id = "B" type="button" class="btn btn-secondary mt-5">"B"</button>
         <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
     </article>
 <!-- 결과화면 -->
     <article class="result">
-        <img id="img" class="mt-5" src="스티브 잡스.jpg" alt="animal">
-        <h2 id="animal" class="text-center mt-5"> 화투패</h2>
-        <h2 id="animal_1" class="text-center mt-5"> "자네는.."</h2>
-        <h3 id="explain" class="text-align:left;"> 설명</h3>
-        <h2 id="animal_2" class="text-center mt-5"> "이 친구와 친해지고 싶다면 주목하게나"</h2>
-        <h3 id="animal_explain" class="text-align:left;"> 설명</h3>
-        <h2 id="friend_explain" class="text-center mt-5"> 죽마고우 각!</h2>
-        <h3 id="animal_3" class="text-center mt-5"> "마당을 나온 뿌링클"</h3>
-        <img id="img_friend" class="mt-1" src="스티브 잡스.jpg" alt="friend">
-        <h2 id="enemy_explain" class="text-center mt-5"> 파국이다 파국!!</h2>
-        <h3 id="animal_4" class="text-center mt-5"> "사슴 같아 보이는 고라니이잉"</h3>
-        <img id="img_enemy" class="mt-5" src="스티브 잡스.jpg" alt="enemy">
+      <p class="mt-5 text-center" style="font-size:1.5rem">그대는...</p>
+        <p id="animal_pre" class="mt-5 text-center" style="font-size:1.3rem">성실함과 책임감의 대명사</p>
+        <h2 id="animal" class="text-center mt-5">킹갓제너럴 우직한 소</h2>
+        <img id="img" class="mt-5" src="src/스티브 잡스.jpg" alt="animal">
+        <h2 class="mt-5 text-center">자네는..</h2>
+        <p id="explain" class="text-left" style="font-size:1.8rem">설명</p>
+        <h2 class="mt-5 text-center">이 친구와 친해지고 싶다면<br>주목하게나!</h2>
+        <p id="animal explain" class="text-left" style="font-size:1.8rem">설명</h3>
+        <div id="row_container" class="animal container">
+          <div class="animal friend">
+            <h2 class="text-center mt-5" style="font-size:2.0rem"><죽마고우 각!></h2>
+            <img id="img_friend" class="mt-5" src="스티브 잡스.jpg" alt="friend">
+            <h3 id="animal_3" class="text-center mt-5" style="font-size:1.5rem">"뿌링클"</h3>
+          </div>
+          <div class="animal enemy">
+            <h2 class="text-center mt-5" style="font-size:2.0rem"><파국이다!></h2>
+            <img id="img_enemy" class="mt-5" src="스티브 잡스.jpg" alt="enemy">
+            <h3 id="animal_4" class="text-center mt-5" style="font-size:1.5rem">"고라니이잉"</h3>
+          </div>
+        </div>
     </article>
 
-
-        <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="share addthis_inline_share_toolbox"></div>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <br><br><div class="share addthis_inline_share_toolbox" id="share"></div>
 
     <!-- 카카오 애드핏 -->
     <article class = "kakao_ad mt-5">
@@ -78,7 +92,7 @@
 
     <!-- 수주받은 광고 -->
     <a class="mt-5 banner" href = "https://tumblbug.com/togetoge/catalog? utm_source=animal_test&utm_medium=web_lecture&utm_campaign=togetoge">
-        <img class= "banner_img" src= "banner.png" alt="banner">
+        <img class= "banner_img" src= "/src/banner.png" alt="banner">
     </a>
 
 <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
@@ -93,65 +107,65 @@
 <script>
     // 문제번호
     var num = 1;
-    var q= {1: {"question_img": "01월_1.png",
-            "title": "친구들이랑 게임을 할 때 다들 집중한 건지 상당히 조용하군. 이때 나는...", "type": "EI",
-            "A": "비지 않는 라디오를 추구하오hello yoon yoon_dokripregular. 조용하면 뻘쭘하니까 말을 튼다.",
-            "B": "그대로 말없이 게임에 푹 집중하오."},
+    var q= {1: {"question_img": "/src/01월_1.png",
+            "title": "새로운 사람들과<br>만나는<br>술자리 미팅!", "type": "EI",
+            "A": "친구 사귀러 나가겠소!",
+            "B": "이미 친한 사람들이랑<br>더 놀고 싶소!"},
 
-            2: {"question_img": "02월_1.png",
-            "title": "보드게임 카페 갔을 때 자네는 어떤 게임을 고르겠는가?", "type": "SN",
-            "A": "기존에 아는 게임 중 최애 게임",
+            2: {"question_img": "/src/02월_1.png",
+            "title": "보드게임 카페<br>갔을 때,<br>자네는 어떤 게임을<br>고르겠는가?", "type": "SN",
+            "A": "기존에 아는 게임 중<br>최애 게임",
             "B": "새로운 신상 게임"},
 
             3: {"question_img": "03월_1.png",
-            "title": "화투 치다가 친구가 두 장을 뒤집었을 때 자네는...", "type": "TF",
-            "A": "절대 봐줄 수 없다. 지나칠래야 지나칠 수 없음요.",
-            "B": "어쩔 수 없지. 좋은 게 좋은 거지~^^ "},
+            "title": "친구랑 둘이서 게임<br>카페에 왔다.<br><br>자네는 오늘<br>할리갈리 게임이<br>너무 땡기는데,<br>친구가 다른 게임을<br>하자고 말한다면!?", "type": "TF",
+            "A": "친구에게 할리갈리를 하자고<br>팍팍 어필하겠소.",
+            "B": "친구가 원하는 게임에<br>그냥 맞춰주겠소."},
 
             4: {"question_img": "04월_1.png",
-            "title": "보드게임 카페 종료 시간이 15분 남았소! 이때 자네는...", "type": "JP",
-            "A": "15분 안에 할 수 있는 게임을 얼른 찾아보자.",
-            "B": "그냥 쭉 하다가 시간 끝나면 정리하거나 대충 연장하자."},
+            "title": "친구랑 게임을<br>하는데, 집중한 건지<br>상당히 조용하군.<br><br>이때 자네는...", "type": "JP",
+            "A": "비지 않는 라디오를 추구하오.<br>말을 터야겠소!",
+            "B": "그대로 말없이 게임에<br>푹 집중하오."},
 
             5: {"question_img": "05월_1.png",
-            "title": "존맛탱 맛집을 발견했소! 나는...", "type": "EI",
-            "A": "“여러분 여기 좀 보세요 진짜 제가 보장하는 맛집임!!!”	동네방네 소문을 내는 홍보쟁이",
-            "B": "“오, 이 집 쫌 맛있는데...?”라며 혼자 생각한다."},
+            "title": "자네에게<br>멍 때린다는 것은..!", "type": "EI",
+            "A": "백지. 진짜 말 그대로 아무 생각<br>안하는 것이오.",
+            "B": "속으로 더 생각하는 중이오.<br>아무 생각을 안 하는 것이<br>가능한 것이오?!"},
 
             6: {"question_img": "06월_1.png",
-            "title": "친구에게 내 원픽 게임을 소개해줄 때 자네는...", "type": "SN",
-            "A": "“이 게임은 ~~~하고 ~~~해서 완전 재밌더라!”라며 디테일을 살린다.",
-            "B": "“이 게임 그냥 넘 재밌삼!” 라며 짧고 강력하게 일축한다."},
+            "title": "게임을 할 때<br>자네는...", "type": "SN",
+            "A": "게임은 이기냐 지냐가 중요하오.<br>내기를 하자꾸나!",
+            "B": "내가 이 게임을 즐겼으면<br>그걸로 된 것이오."},
 
             7: {"question_img": "07월_1.png",
-            "title": "게임이 끝났다. 보드게임을 정리할 때 자네는...", "type": "JP",
-            "A": "원래 있었던 대로 깔쌈하게 정리한다.  ",
-            "B": "그냥 다 넣어놓기만 하면 장땡이다."},
+            "title": "보드게임 카페<br>종료까지<br>15분 남았소!<br><br>이때 자네는...", "type": "JP",
+            "A": "15분 안에 할 수 있는 게임을<br>얼른 찾아볼걸세.",
+            "B": "계속 하다가 시간 끝나면<br>정리하거나 연장할걸세."},
 
             8: {"question_img": "08월_1.png",
-            "title": "게임을 할 때 자네는...", "type": "TF",
-            "A": " 게임에서 이기냐 지냐가 제일 중요하오.",
-            "B": "내가 이 게임을 즐겼으면 됐다"},
+            "title": "게임이 끝났다.<br>보드게임을<br>정리할 때<br><br>자네는...", "type": "TF",
+            "A": "원래 있었던 대로 깔쌈하게<br>정리할 것이오만.",
+            "B": "그냥 다 넣어놓기만 하면<br>장땡이지 않겠소?"},
 
             9: {"question_img": "09월_1.png",
-            "title": "새로운 사람들과 만나는 술자리! 미팅!", "type": "EI",
-            "A": "친구 사귀러 나가겠소!",
-            "B": "굳이...? 이미 친한 사람들이랑 더 놀고 싶소!"},
+            "title": "존맛탱 맛집을<br>발견했소!<br><br>자네는...", "type": "EI",
+            "A": '"여러분 여기 좀 보시오!"<br>내가 이 동네 홍보꾼이오.',
+            "B": '"오, 이 집 꽤나 참한 맛집이군..."<br>혼자 생각하는 편이오.'},
 
             10: {"question_img": "10월_1.png",
-            "title": "고스톱을 칠 때 승리의 기운이 스멀스멀 올라올라고 막 하는데!", "type": "SN",
-            "A": "그래도 살짝 불안하다... 안정적으로 가자.",
-            "B": "묻고 GO로 가! 고고고"},
+            "title": "같이 맛집에 가자며<br>친구랑 카톡으로<br>이야기하고 있다.<br><br>이때 자네는...", "type": "SN",
+            "A": "어떤 맛집을 갈 것인지 생각해보고<br>가는 길, 후기를 찾아볼걸세.",
+            "B": "그냥 그때 가서 생각해보면 될 것<br>같소. 그날 땡기는 걸 먹자꾸나!"},
 
             11: {"question_img": "11월_1.png",
-            "title": "게임 시간! 나는 오늘 OO게임이 너무 땡기는데, 친구들이 다른 게임을 하자고 한다면?", "type": "TF",
-            "A": "사람들에게 OO게임을 하자고 팍팍 어필한다.",
-            "B": "친구들이 원하는 게임에 그냥 맞춰춘다."},
+            "title": "친구가 요새 고민이<br>있다며 털어놓는다.", "type": "TF",
+            "A": "명쾌한 해답을 생각해내 친구의<br>고민 탈출을 돕겠소!",
+            "B": "친구가 많이 힘들어했을 것 같으니<br>위로해주고 기분을 풀어주겠소!"},
 
             12: {"question_img": "12월_1.png",
-            "title": "친구들이랑 방탈출 하러 가기로 했다.", "type": "JP",
-            "A": "가는 길, 할인 방법을 찾고 예약까지 미리 해두는 게 마음이 편하다. ",
-            "B": "그냥 간다. 일단 가보고 사람 많으면 기다리지 뭐. 그게 편하다! "}
+            "title": "일을 할 때 자네가<br>좋아하는 것은...", "type": "JP",
+            "A": "자유로운 분위기 속에서 기발한<br>생각을 이끌어내는 것이 제일 좋소!",
+            "B": "체계적인 분위기 속에서<br>일을 하는 것이 제일 좋소!"}
 
 
     }
@@ -431,6 +445,7 @@
        function start() {
            $(".start").hide();
            $(".question").show();
+           $("#question_img").hide();
            next();
        }
     //    a를 클릭하면 타입 정보를 가져와서 1을 올림
@@ -476,7 +491,8 @@
         //    문제 푸는 동안에는 진행도 보여줌
         // q라는 js옵젝에서 가져오고, 문제 자연스레 넘어감
            else{
-            $(".progress-bar").attr('style', 'width: calc(100/12* '+(num-1)+'%)');
+            $(".progress-bar").attr('style', 'width: calc(100/12* '+(num)+'%)');
+            $("#count").html((num)+'/12');
             $("#title").html(q[num]["title"]);
             $("#type").val(q[num]["type"]);
             $("#A").html(q[num]["A"]);
@@ -486,6 +502,7 @@
            }
        }
    </script>
-   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6025167c9b6cb0ac"></script>
+   <!-- Go to www.addthis.com/dashboard to customize your tools -->
+   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6025167c9b6cb0ac"></script>
 </body>
 </html>
