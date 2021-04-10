@@ -4,7 +4,6 @@
          url('/fonts/yoondokrip-webfont.woff') format('woff'),
          url('/fonts/yoondokrip-webfont.ttf') format('truetype'),
          url('/fonts/yoondokrip-webfont.otf') format('opentype');
- 		src: local(※), url('/fonts/yoondokrip-webfont.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
