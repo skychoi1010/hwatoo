@@ -34,13 +34,24 @@
 <!-- 시작화면 -->
 
     <article class = "start">
-      <div class="title_text">
+      <img id="tree_right" class="mt-5" src="/src/tree_right.png" alt="title">
+      <img id="tree_left" class="mt-5" src="/src/tree_left.png" alt="title">
+      <div class="title_text middle">
           <h1 class = "mt-5 text-left">소인,</h1>
       </div>
-      <div class="subtitle_text">
+      <div class="subtitle_text middle">
         <h3 class = "mt-5 text-left">그대의 성질을<br>화투로 간파하겠노라 -.</h3>
       </div>
-        <button type="button" class="btn btn-secondary mt-5" onclick='start();'>시작하거라!</button>
+      <div class="cards">
+        <img id="card1" class="mt-5 card" src="/src/card1.png">
+        <img id="card2" class="mt-5 card" src="/src/card2.png">
+        <img id="card3" class="mt-5 card" src="/src/card3.png">
+        <img id="card4" class="mt-5 card" src="/src/card4.png">
+      </div>
+      <br><br><br><br><br>
+      <button id="start" type="button" class="btn btn-secondary mt-5" onclick='start();'>시작하거라!
+        <!--<img id="btn_start" src="/src/start_btn_foreground.png">-->
+      </button>
     </article>
 <!-- 문제화면 -->
     <article class = "question">
@@ -106,6 +117,7 @@
     <input type="hidden" id = "TF" value="0">
     <input type="hidden" id = "JP" value="0">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 <script>
@@ -461,6 +473,24 @@
 		copyClip(link);
 	});
 
+  $( document ).ready( function() {
+          var jbTime = 50;
+          $( '#card1' ).animate( {
+            opacity: '1'
+          }, jbTime, function() {
+            $( '#card2' ).animate( {
+              opacity: '1'
+            }, 100, function() {
+              $( '#card3' ).animate( {
+                opacity: '1'
+              }, 150, function() {
+                $( '#card4' ).animate( {
+                  opacity: '1'
+                }, 200 );
+              } );
+            } );
+          } );
+        } );
     // 시작화면 : 시작화면 누르면 숨기고, 문제 보여줌
        function start() {
            $(".start").hide();
