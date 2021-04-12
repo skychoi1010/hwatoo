@@ -31,7 +31,7 @@ html{
   width: auto;
   padding: 1.0rem;
   height: auto;
-  background-image: url(/src/start_btn_background.png);
+  background-image: url(../hwatoo/src/start_btn_background.png);
   background-color: transparent;
 }
 
@@ -44,7 +44,7 @@ html{
   width: 70%;
   height: 8.0rem;
   object-fit: contain;
-  background-image: url(/src/start_btn_background.png);
+  background-image: url(../hwatoo/src/start_btn_background.png);
   background-color: transparent;
 }
 
