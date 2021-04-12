@@ -37,7 +37,7 @@ html{
   align-self: center;
   border: 0px;
   color: black;
-  width: 70%;
+  width: 80%;
   height: 8.0rem;
   object-fit: contain;
   background-image: url(../hwatoo/src/start_btn_background.png);
@@ -114,6 +114,11 @@ html{
 .animal_exp{
   padding-left: 10%;
   padding-right: 10%;
+}
+
+#animal{
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 #row_container{
