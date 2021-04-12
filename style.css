@@ -13,10 +13,6 @@ html{
   font-size: 10px;
 }
 
-#title{
-  font-size: 3.0rem;
-}
-
 #btn_start{
   /*background-image: url(/src/start_btn_background.png);*/
   object-fit: contain;
@@ -54,8 +50,10 @@ html{
     color: black;
 }
 
-.question{
+.question_text{
   min-height: 30rem;
+  font-size: 3.0rem;
+  vertical-align: center;
 }
 
 .copy-btn{
