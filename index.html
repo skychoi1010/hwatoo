@@ -55,36 +55,41 @@
     </article>
 <!-- 문제화면 -->
     <article class = "question">
-        <div class="progress mt-5">
-            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div><br><br>
-        <h2 id="title" class="text-center">문제</h2>
-        <input id = "type" type="hidden" value="EI">
-        <img id="question_img" class="mt-5" src="01월_1.png" alt="title">
-        <h2 id="count" class="mt-5 text-center">1/12</h2>
-        <button id = "A" type="button" class="btn btn-secondary mt-5">"A"</button>
-        <button id = "B" type="button" class="btn btn-secondary mt-5">"B"</button>
+      <img id="tree_right" class="mt-5" src="../hwatoo/src/tree_right.png" alt="title">
+      <img id="tree_left" class="mt-5" src="../hwatoo/src/tree_left.png" alt="title">
+      <img id="progressbar_card" class="mt-5" src="../hwatoo/src/progressbar_card.png" alt="card">
+      <div class="progress mt-5">
+          <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div><br><br>
+      <h2 id="title" class="question text-center">문제</h2>
+      <input id = "type" type="hidden" value="EI">
+      <img id="question_img" class="mt-5" src="01월_1.png" alt="title">
+      <h2 id="count" class="mt-5 text-center">1/12</h2>
+      <button id = "A" type="button" class="btn pick btn-secondary mt-5">"A"</button>
+      <button id = "B" type="button" class="btn pick btn-secondary mt-5">"B"</button>
         <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
     </article>
 <!-- 결과화면 -->
     <article class="result">
+      <img id="tree_right" class="mt-5" src="../hwatoo/src/tree_right.png" alt="title">
+      <img id="tree_left" class="mt-5" src="../hwatoo/src/tree_left.png" alt="title">
       <p class="mt-5 text-center" style="font-size:1.5rem">그대는...</p>
         <p id="animal_pre" class="mt-5 text-center" style="font-size:1.3rem">성실함과 책임감의 대명사</p>
         <h2 id="animal" class="text-center mt-5">킹갓제너럴 우직한 소</h2>
-        <img id="img" class="mt-5" src="src/스티브 잡스.jpg" alt="animal">
-        <h2 class="mt-5 text-center">자네는..</h2>
+        <img id="img" class="mt-5" src="../hwatoo/src/ISFP.png" alt="animal">
+        <h2 class="mt-5 text-center">자네는..</h2><br><br>
         <p id="explain" class="text-left" style="font-size:1.8rem">설명</p>
-        <h2 class="mt-5 text-center">이 친구와 친해지고 싶다면<br>주목하게나!</h2>
+        <h2 class="mt-5 text-center">이 친구와 친해지고 싶다면<br>주목하게나!</h2><br><br>
         <p id="animal explain" class="text-left" style="font-size:1.8rem">설명</h3>
         <div id="row_container" class="animal container">
           <div class="animal friend">
             <h2 class="text-center mt-5" style="font-size:2.0rem"><죽마고우 각!></h2>
-            <img id="img_friend" class="mt-5" src="../hwatoo/src/ENFJ.jpg" alt="friend">
+            <img id="img_friend" class="mt-5" src="../hwatoo/src/ENFJ.png" alt="friend">
             <h3 id="animal_3" class="text-center mt-5" style="font-size:1.5rem">"뿌링클"</h3>
           </div>
           <div class="animal enemy">
             <h2 class="text-center mt-5" style="font-size:2.0rem"><파국이다!></h2>
-            <img id="img_enemy" class="mt-5" src="스티브 잡스.jpg" alt="enemy">
+            <img id="img_enemy" class="mt-5" src="../hwatoo/src/ISFP.png" alt="enemy">
             <h3 id="animal_4" class="text-center mt-5" style="font-size:1.5rem">"고라니이잉"</h3>
           </div>
         </div>
@@ -93,7 +98,7 @@
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <br><br>
         <p class="copy">
-          <button type="button" class="copy-btn">URL 복사</button>
+          <button type="button" class="copy-btn btn">URL 복사</button>
         </p>
 
 
@@ -123,62 +128,62 @@
 <script>
     // 문제번호s
     var num = 1;
-    var q= {1: {"question_img": "/src/01월_1.png",
+    var q= {1: {"question_img": "../hwatoo/src/01월_1.png",
             "title": "새로운 사람들과<br>만나는<br>술자리 미팅!", "type": "EI",
             "A": "친구 사귀러 나가겠소!",
             "B": "이미 친한 사람들이랑<br>더 놀고 싶소!"},
 
-            2: {"question_img": "/src/02월_1.png",
+            2: {"question_img": "../hwatoo/src/02월_1.png",
             "title": "보드게임 카페<br>갔을 때,<br>자네는 어떤 게임을<br>고르겠는가?", "type": "SN",
             "A": "기존에 아는 게임 중<br>최애 게임",
             "B": "새로운 신상 게임"},
 
-            3: {"question_img": "03월_1.png",
+            3: {"question_img": "../hwatoo/src/03월_1.png",
             "title": "친구랑 둘이서 게임<br>카페에 왔다.<br><br>자네는 오늘<br>할리갈리 게임이<br>너무 땡기는데,<br>친구가 다른 게임을<br>하자고 말한다면!?", "type": "TF",
             "A": "친구에게 할리갈리를 하자고<br>팍팍 어필하겠소.",
             "B": "친구가 원하는 게임에<br>그냥 맞춰주겠소."},
 
-            4: {"question_img": "04월_1.png",
+            4: {"question_img": "../hwatoo/src/04월_1.png",
             "title": "친구랑 게임을<br>하는데, 집중한 건지<br>상당히 조용하군.<br><br>이때 자네는...", "type": "JP",
             "A": "비지 않는 라디오를 추구하오.<br>말을 터야겠소!",
             "B": "그대로 말없이 게임에<br>푹 집중하오."},
 
-            5: {"question_img": "05월_1.png",
+            5: {"question_img": "../hwatoo/src/05월_1.png",
             "title": "자네에게<br>멍 때린다는 것은..!", "type": "EI",
             "A": "백지. 진짜 말 그대로 아무 생각<br>안하는 것이오.",
             "B": "속으로 더 생각하는 중이오.<br>아무 생각을 안 하는 것이<br>가능한 것이오?!"},
 
-            6: {"question_img": "06월_1.png",
+            6: {"question_img": "../hwatoo/src/06월_1.png",
             "title": "게임을 할 때<br>자네는...", "type": "SN",
             "A": "게임은 이기냐 지냐가 중요하오.<br>내기를 하자꾸나!",
             "B": "내가 이 게임을 즐겼으면<br>그걸로 된 것이오."},
 
-            7: {"question_img": "07월_1.png",
+            7: {"question_img": "../hwatoo/src/07월_1.png",
             "title": "보드게임 카페<br>종료까지<br>15분 남았소!<br><br>이때 자네는...", "type": "JP",
             "A": "15분 안에 할 수 있는 게임을<br>얼른 찾아볼걸세.",
             "B": "계속 하다가 시간 끝나면<br>정리하거나 연장할걸세."},
 
-            8: {"question_img": "08월_1.png",
+            8: {"question_img": "../hwatoo/src/08월_1.png",
             "title": "게임이 끝났다.<br>보드게임을<br>정리할 때<br><br>자네는...", "type": "TF",
             "A": "원래 있었던 대로 깔쌈하게<br>정리할 것이오만.",
             "B": "그냥 다 넣어놓기만 하면<br>장땡이지 않겠소?"},
 
-            9: {"question_img": "09월_1.png",
+            9: {"question_img": "../hwatoo/src/09월_1.png",
             "title": "존맛탱 맛집을<br>발견했소!<br><br>자네는...", "type": "EI",
             "A": '"여러분 여기 좀 보시오!"<br>내가 이 동네 홍보꾼이오.',
             "B": '"오, 이 집 꽤나 참한 맛집이군..."<br>혼자 생각하는 편이오.'},
 
-            10: {"question_img": "10월_1.png",
+            10: {"question_img": "../hwatoo/src/10월_1.png",
             "title": "같이 맛집에 가자며<br>친구랑 카톡으로<br>이야기하고 있다.<br><br>이때 자네는...", "type": "SN",
             "A": "어떤 맛집을 갈 것인지 생각해보고<br>가는 길, 후기를 찾아볼걸세.",
             "B": "그냥 그때 가서 생각해보면 될 것<br>같소. 그날 땡기는 걸 먹자꾸나!"},
 
-            11: {"question_img": "11월_1.png",
+            11: {"question_img": "../hwatoo/src/11월_1.png",
             "title": "친구가 요새 고민이<br>있다며 털어놓는다.", "type": "TF",
             "A": "명쾌한 해답을 생각해내 친구의<br>고민 탈출을 돕겠소!",
             "B": "친구가 많이 힘들어했을 것 같으니<br>위로해주고 기분을 풀어주겠소!"},
 
-            12: {"question_img": "12월_1.png",
+            12: {"question_img": "../hwatoo/src/12월_1.png",
             "title": "일을 할 때 자네가<br>좋아하는 것은...", "type": "JP",
             "A": "자유로운 분위기 속에서 기발한<br>생각을 이끌어내는 것이 제일 좋소!",
             "B": "체계적인 분위기 속에서<br>일을 하는 것이 제일 좋소!"}
@@ -193,11 +198,11 @@
 
                     "animal_explain":"시간 약속 잘 지켜주게나.<br>무뚝뚝해보여도 이 친구가 사실은 정이 많다네. 요즘 말로… <<츤데레>>라고 하는가?<br>당일에 갑자기 약속 잡는 것보다는 미리미리 약속 잡는 걸 선호한다네",
 
-                    "img": "ISTJ.png",
+                    "img": "../hwatoo/src/ISTJ.png",
 
-                    "img_friend": "ENFP.png",
+                    "img_friend": "../hwatoo/src/ENFP.png",
 
-                    "img_enemy": "ENFJ.png",
+                    "img_enemy": "../hwatoo/src/ENFJ.png",
 
                     "animal_3": "후지산 대폭발 인싸 불가사리",
 
@@ -209,11 +214,11 @@
 
                     "animal_explain":"이 친구는 꼼꼼하게 계획 짜서 알차게 노는 걸 좋아할 걸세. <br>혼자 집에서 노는 시간을 소중히 여기는 친구라네. 허나 밖에 나가 노는 것도 좋아한다네.<br>친구들이 싸우면 꽤나 당황할 걸세. 이이는 다들 사이 좋게 지내길 바란다네.",
 
-                    "img": "ISFJ.png",
+                    "img": "../hwatoo/src/ISFJ.png",
 
-                    "img_friend": "ENTP.png",
+                    "img_friend": "../hwatoo/src/ENTP.png",
 
-                    "img_enemy": "ENTJ.png",
+                    "img_enemy": "../hwatoo/src/ENTJ.png",
 
                     "animal_3": "통통 튀는 물수제비",
 
@@ -225,11 +230,11 @@
 
                     "animal_explain":"이 친구가 낯을 좀 가리는데 이해해주게나. 먼저 다가와주면 속으로 신나할 것이야. <br>이이가 겉으로는 차가워보여도 속은 정말 따뜻하다네. 지내다보면 첫인상과 정말 다를 걸세.<br> 모르는 사람들 그득한 모임보다는 친한 친구들과 노는 것을 선호한다네. ",
 
-                    "img": "INFJ.png",
+                    "img": "../hwatoo/src/INFJ.png",
 
-                    "img_friend": "ESTP.png",
+                    "img_friend": "../hwatoo/src/ESTP.png",
 
-                    "img_enemy": "ESTJ.png",
+                    "img_enemy": "../hwatoo/src/ESTJ.png",
 
                     "animal_3": "조잘조잘 웃음보따리",
 
@@ -242,11 +247,11 @@
 
                     "animal_explain":"이 친구가 얼굴, 이름을 잘 기억 못해도 이해해주게나. 나쁜 뜻이 있는 것이 아니라 진짜 그냥 기억을 못하는 것뿐이라네. <br> 이이가 감정 표현에 서툴러도 속으로는 고마워하는 것들이 많다네.<br> 가식이나 거짓말을 좋아하지 않는다네. 솔직하게 대해주게나.",
 
-                    "img": "INTJ.png",
+                    "img": "../hwatoo/src/INTJ.png",
 
-                    "img_friend": "ESFP.png",
+                    "img_friend": "../hwatoo/src/ESFP.png",
 
-                    "img_enemy": "ESFJ.png",
+                    "img_enemy": "../hwatoo/src/ESFJ.png",
 
                     "animal_3": "왓썹 호랑나비! 으아아~ 들이대!",
 
@@ -259,11 +264,11 @@
 
                     "animal_explain":"이 친구가 감정표현이 좀 서툴러도 이해해주게나. 속으로는 정말 좋아하고 있을 수도 있다네.<br>혼자만의 시간을 존중해줘야 한다네.<br>마음에 없는 말은 못한다네. 이이가 하는 말은 다 진심일 걸세.",
 
-                    "img": "ISTP.png",
+                    "img": "../hwatoo/src/ISTP.png",
 
-                    "img_friend": "ENFJ.png",
+                    "img_friend": "../hwatoo/src/ENFJ.png",
 
-                    "img_enemy": "ENFP.png",
+                    "img_enemy": "../hwatoo/src/ENFP.png",
 
                     "animal_3": "강강술래 세계선수권",
 
@@ -276,11 +281,11 @@
 
                     "animal_explain":"표현을 잘 못해도 사실은 정이 많은 친구라네.<br> 먼저 다가와주면 속으로 덩실덩실 춤추고 있을 걸세.<br>이 친구와 연락이 잘 안 되어도 이해해주게나. 별 뜻은 없고 그저 조금 귀찮아할 뿐이라네.",
 
-                    "img": "ISFP.png",
+                    "img": "../hwatoo/src/ISFP.png",
 
-                    "img_friend": "ENTJ.png",
+                    "img_friend": "../hwatoo/src/ENTJ.png",
 
-                    "img_enemy": "ENTP.png",
+                    "img_enemy": "../hwatoo/src/ENTP.png",
 
                     "animal_3": "효율갑-티바 세마리 치킨",
 
@@ -295,9 +300,9 @@
 
                     "img": "INFP.png",
 
-                    "img_friend": "ESTJ.png",
+                    "img_friend": "../hwatoo/src/ESTJ.png",
 
-                    "img_enemy": "ESTP.png",
+                    "img_enemy": "../hwatoo/src/ESTP.png",
 
                     "animal_3": "귀욤뽀쨔악한 참새",
 
@@ -310,11 +315,11 @@
 
                     "animal_explain":"이 친구는 마음에 없는 소리를 잘 못한다네. 그만큼 이 친구가 한 말들은 다 진심이라네.<br>소중한 사람일수록 위로보다는 해결책을 제시하는 경향이 있다네. 이것이 애정표현이니 어여삐 봐주시게. <br> 혼자 보내는 시간을 존중해주게나.",
 
-                    "img": "INTP.png",
+                    "img": "../hwatoo/src/INTP.png",
 
-                    "img_friend": "ESFJ.png",
+                    "img_friend": "../hwatoo/src/ESFJ.png",
 
-                    "img_enemy": "ESFP.png",
+                    "img_enemy": "../hwatoo/src/ESFP.png",
 
                     "animal_3": "쵸오큼 더 귀욤빤쨕한 동박새",
 
@@ -327,11 +332,11 @@
 
                     "animal_explain":"드립 치면 많이 웃어주시게나. 드립 한 번 성공하면 뿌듯해서 잠도 못 잔다네.<br>친한 사람한테는 막 대하고 장난도 많이 친다네. 애정 표현이니 오해하지 말아주시게.<br>이 친구는 돌려 말하면 잘 못 알아듣는다네. 직접적으로 말해주게나.",
 
-                    "img": "ESTP.png",
+                    "img": "../hwatoo/src/ESTP.png",
 
-                    "img_friend": "INFJ.png",
+                    "img_friend": "../hwatoo/src/INFJ.png",
 
-                    "img_enemy": "INFP.png",
+                    "img_enemy": "../hwatoo/src/INFP.png",
 
                     "animal_3": "마이웨이 SSAP 선비",
 
@@ -344,11 +349,11 @@
 
                     "animal_explain":"연락 확인이 느려도 이해해주게나. 그대들이 싫어서가 절대 아니라네. <br>이이가 '아무거나’라고 하면 진짜 아무거나 다 좋다는 뜻이라네.<br>이 친구가 좀 덜렁거려도 많이 챙겨주게나.",
 
-                    "img": "ESFP.png",
+                    "img": "../hwatoo/src/ESFP.png",
 
-                    "img_friend": "INTJ.png",
+                    "img_friend": "../hwatoo/src/INTJ.png",
 
-                    "img_enemy": "INTP.png",
+                    "img_enemy": "../hwatoo/src/INTP.png",
 
                     "animal_3": "어딘가 싱거운 두루치기",
 
@@ -361,11 +366,11 @@
 
                     "animal_explain":"이 친구는 밀당을 별로 안 좋아한다네. 밀면 그대로 밀려나버릴 걸세. 밀당 없이 진심으로 대해주게나. <br>외유내강 아니고 외강내유. 겉으로는 강해보여도 속은 여린 친구라네.<br> 이 친구가 다 괜찮다고 하더라도 최소한의 예의는 지켜주게나.",
 
-                    "img": "ENFP.png",
+                    "img": "../hwatoo/src/ENFP.png",
 
-                    "img_friend": "ISTJ.png",
+                    "img_friend": "../hwatoo/src/ISTJ.png",
 
-                    "img_enemy": "ISTP.png",
+                    "img_enemy": "../hwatoo/src/ISTP.png",
 
                     "animal_3": "킹갓제너럴 우직한 소",
 
@@ -378,11 +383,11 @@
 
                     "animal_explain":"이 친구는 논리적으로 이야기하는 걸 즐긴다네. 토론배틀은 언제나 환영할 걸세.<br>이이는 친해지고 싶으면 놀리고 장난치는 편이라네. <br>피상적인 관계보다는 가식 없고 진실된 관계를 원할 걸세.",
 
-                    "img": "ENTP.png",
+                    "img": "../hwatoo/src/ENTP.png",
 
-                    "img_friend": "ISFJ.png",
+                    "img_friend": "../hwatoo/src/ISFJ.png",
 
-                    "img_enemy": "ISFP.png",
+                    "img_enemy": "../hwatoo/src/ISFP.png",
 
                     "animal_3": "마당을 나온 뿌링클",
 
@@ -395,11 +400,11 @@
 
                     "animal_explain":"이 친구가 잔소리 하는 건 다 애정 표현이라네.<br>신나서 계획 짜는데 반응 없으면 서운해할 걸세.<br>이이가 겉으로는 차가워보여도 의리와 정이 넘치는 친구라네.",
 
-                    "img": "ESTJ.png",
+                    "img": "../hwatoo/src/ESTJ.png",
 
-                    "img_friend": "INFP.png",
+                    "img_friend": "../hwatoo/src/INFP.png",
 
-                    "img_enemy": "INFJ.png",
+                    "img_enemy": "../hwatoo/src/INFJ.png",
 
                     "animal_3": "그네뛰기 세계선수권",
 
@@ -412,11 +417,11 @@
 
                     "animal_explain":"이 친구는 스트레스 받으면 누구라도 만나서 놀아야 한다네. 많이 만나주시게나. <br>칭찬해주면 무척 좋아할 걸세. <br>상대방 반응을 꽤나 신경쓰는 친구라네. 적극적으로 호응해주시게나.",
 
-                    "img": "ESFJ.png",
+                    "img": "../hwatoo/src/ESFJ.png",
 
-                    "img_friend": "INTP.png",
+                    "img_friend": "../hwatoo/src/INTP.png",
 
-                    "img_enemy": "INTJ.png",
+                    "img_enemy": "../hwatoo/src/INTJ.png",
 
                     "animal_3": "결정장애 무야호",
 
@@ -429,11 +434,11 @@
 
                     "animal_explain":"그대들과 만나서 노는 걸 너무 좋아하는 친구라네. 많이들 놀아주시게나. <br>칭찬해주고 애정 표현 해주면 아주 좋아할 걸세.<br> 이 친구는 모두가 평화롭길 바란다네. 싸우지들 마시게나.",
 
-                    "img": "ENFJ.png",
+                    "img": "../hwatoo/src/ENFJ.png",
 
-                    "img_friend": "ISTP.png",
+                    "img_friend": "../hwatoo/src/ISTP.png",
 
-                    "img_enemy": "ISTJ.png",
+                    "img_enemy": "../hwatoo/src/ISTJ.png",
 
                     "animal_3": "앞뒤가 똑같은 달래달래 진달래",
 
@@ -446,11 +451,11 @@
 
                     "animal_explain":"멀리서 보면 카리스마 넘치지만 가까이서 보면 이 친구만큼 다정한 사람도 없을 걸세.<br>이 친구는 자기 말에 동의해주면 아주 좋아한다네.<br>이 친구만큼 효율을 사랑하는 사람도 없다네. 다들 효율적으로 행동해주면 고맙겠네.<br>",
 
-                    "img": "ENTJ.png",
+                    "img": "../hwatoo/src/ENTJ.png",
 
-                    "img_friend": "ISFP.png",
+                    "img_friend": "../hwatoo/src/ISFP.png",
 
-                    "img_enemy": "ISFJ.png",
+                    "img_enemy": "../hwatoo/src/ISFJ.png",
 
                     "animal_3": "사슴 같아 보이는 고라니이잉",
 
@@ -465,7 +470,7 @@
 		$temp.val(url).select();
 		document.execCommand('copy');
 		$temp.remove();
-		alert('URL이 복사되었습니다.');
+		alert('URL이 복사되었습니다.<br>친구들과 공유해보세요!');
 	}
 	$('.copy-btn').on('click', function(e){
 		e.preventDefault();
@@ -496,6 +501,7 @@
            $(".start").hide();
            $(".question").show();
            $("#question_img").hide();
+           $("#progressbar_card").hide();
            next();
        }
     //    a를 클릭하면 타입 정보를 가져와서 1을 올림
@@ -514,42 +520,53 @@
     // 각 속성마다 2를 넘어가는 결과값 부여
     // 결과값 경고창으로 보여주고, 그 후에 이미지랑 설명 노출
        function next() {
-           if (num==13){
-               $(".question").hide();
-               $(".result").show();
-               var mbti = "";
-               ($("#EI").val() < 2) ? mbti+="I" : mbti+="E";
-               ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
-               ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
-               ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
-               alert(mbti);
+         if (num == 12) {
+           $(".progress-bar").attr('style', 'width: calc(100/12* '+(num)+'%)');
+           $("#count").html((num)+'/12');
+           $("#title").html(q[num]["title"]);
+           $("#type").val(q[num]["type"]);
+           $("#A").html(q[num]["A"]);
+           $("#B").html(q[num]["B"]);
+           $("#question_img").attr("src", q[num]["question_img"]);
+           $("#progressbar_card").show();
+           num++;
+         }
+         else if (num==13){
+             $(".question").hide();
+             $(".result").show();
+             var mbti = "";
+             ($("#EI").val() < 2) ? mbti+="I" : mbti+="E";
+             ($("#SN").val() < 2) ? mbti+="N" : mbti+="S";
+             ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
+             ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
+             alert(mbti);
 
-               if (result [mbti] == "ENTJ"){
+             if (result [mbti] == "ENTJ"){
 
-               }
-               $("#img").attr("src",result[mbti]["img"]);
-               $("#animal").html(result[mbti]["animal"]);
-               $("#explain").html(result[mbti]["explain"]);
-               $("#animal_explain").html(result[mbti]["animal_explain"]);
-               $("#friend_explain").html(result[mbti]["friend_explain"]);
-               $("#animal_3").html(result[mbti]["animal_3"]);
-               $("#animal_4").html(result[mbti]["animal_4"]);
-               $("#img_friend").attr("src",result[mbti]["img_friend"]);
-               $("#img_enemy").attr("src",result[mbti]["img_enemy"]);
-               $("#enemy_explain").html(result[mbti]["enemy_explain"]);
-           }
-        //    문제 푸는 동안에는 진행도 보여줌
-        // q라는 js옵젝에서 가져오고, 문제 자연스레 넘어감
-           else{
-            $(".progress-bar").attr('style', 'width: calc(100/12* '+(num)+'%)');
-            $("#count").html((num)+'/12');
-            $("#title").html(q[num]["title"]);
-            $("#type").val(q[num]["type"]);
-            $("#A").html(q[num]["A"]);
-            $("#B").html(q[num]["B"]);
-            $("#question_img").attr("src", q[num]["question_img"]);
-            num++;
-           }
+             }
+             $("#img").attr("src",result[mbti]["img"]);
+             $("#animal").html(result[mbti]["animal"]);
+             $("#explain").html(result[mbti]["explain"]);
+             $("#animal_explain").html(result[mbti]["animal_explain"]);
+             $("#friend_explain").html(result[mbti]["friend_explain"]);
+             $("#animal_3").html(result[mbti]["animal_3"]);
+             $("#animal_4").html(result[mbti]["animal_4"]);
+             $("#img_friend").attr("src",result[mbti]["img_friend"]);
+             $("#img_enemy").attr("src",result[mbti]["img_enemy"]);
+             $("#enemy_explain").html(result[mbti]["enemy_explain"]);
+         }
+      //    문제 푸는 동안에는 진행도 보여줌
+      // q라는 js옵젝에서 가져오고, 문제 자연스레 넘어감
+         else{
+          $(".progress-bar").attr('style', 'width: calc(100/12* '+(num)+'%)');
+          $("#count").html((num)+'/12');
+          $("#title").html(q[num]["title"]);
+          $("#type").val(q[num]["type"]);
+          $("#A").html(q[num]["A"]);
+          $("#B").html(q[num]["B"]);
+          $("#question_img").attr("src", q[num]["question_img"]);
+          num++;
+         }
        }
    </script>
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
