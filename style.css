@@ -105,6 +105,7 @@ html{
 .question{
     display: none;
     font-family: yoon_dokripregular;
+    min-height: 30rem;
 }
 
 .result{
