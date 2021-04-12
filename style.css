@@ -119,6 +119,8 @@ html{
 }
 
 #row_container{
+  padding-left: 5%;
+  padding-right: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
