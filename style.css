@@ -58,11 +58,6 @@ html{
   min-height: 30rem;
 }
 
-.result{
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
 .copy-btn{
   font-size: 1.0rem;
   width: auto;
@@ -118,8 +113,12 @@ html{
     display: none;
 }
 
+.animal_exp{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 #row_container{
-  width: 100%
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
