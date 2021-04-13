@@ -505,21 +505,7 @@
   // 시작화면 : 시작화면 누르면 숨기고, 문제 보여줌
   function start() {
     $(".start").hide();
-    $(".question").hide();
-    $(".result").show();
-    mbti = "ISTJ"; //TODO
-    $("#img").attr("src",result[mbti]["img"]);
-    $("#animal").html(result[mbti]["animal"]);
-    $("#explain").html(result[mbti]["explain"]);
-    $("#animal_explain").html(result[mbti]["animal_explain"]);
-    $("#friend_explain").html(result[mbti]["friend_explain"]);
-    $("#animal_3").html(result[mbti]["animal_3"]);
-    $("#animal_4").html(result[mbti]["animal_4"]);
-    $("#img_friend").attr("src",result[mbti]["img_friend"]);
-    $("#img_enemy").attr("src",result[mbti]["img_enemy"]);
-    $("#enemy_explain").html(result[mbti]["enemy_explain"]);
-    $("#question_img").hide();
-    $("#progressbar_card").hide();
+    $(".question").show();
     next();
   }
   //    a를 클릭하면 타입 정보를 가져와서 1을 올림
