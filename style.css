@@ -63,6 +63,7 @@ html{
   background-image: url(../hwatoo/src/start_btn_background.png);
   background-size: 18rem auto;
   background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .btn{
@@ -75,7 +76,10 @@ html{
   height: 8.0rem;
   object-fit: contain;
   background-image: url(../hwatoo/src/start_btn_background.png);
+  background-size: 100% 100%;
   background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   line-height: 1.17;
   letter-spacing: -0.6px;
   color: #000000;
@@ -142,12 +146,25 @@ html{
 }
 
 #progressbar_card{
+  display: none;
   position: absolute;
   width: 3.0rem;
   top: 0;
   z-index: 1;
-  right: 3rem;
+  margin-right: 1rem;
+  align-self: flex-end;
   object-fit: contain;
+  animation: 2s fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .copy-btn{
@@ -159,6 +176,10 @@ html{
   width: 14rem;
   height: 4rem;
   object-fit: contain;
+  background-size: 100% 100%;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(../hwatoo/src/start_btn_background.png);
   background-color: transparent;
   background-size: 100% auto;
