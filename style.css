@@ -13,53 +13,158 @@ html{
   font-size: 10px;
 }
 
-#btn_start{
-  /*background-image: url(/src/start_btn_background.png);*/
+.header_container{
+  margin: auto;
+  width: 30rem;
+  min-height: 37rem;
+  margin-top: 5rem;
+  padding: 5rem;
   object-fit: contain;
+  background-image: url(../hwatoo/src/start_background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header{
+  position: absolute;
+  top: 12rem;
+  left: 10rem;
+  min-width: 10rem;
+   font-family: yoon_dokripregular;
+   font-size: 3.5rem;
+   line-height: 1.18;
+   letter-spacing: normal;
+   text-align: left;
+   color: #000000;
+}
+
+.header2{
+  position: absolute;
+  top: 18rem;
+  right: 10rem;
+  font-family: yoon_dokripregular;
+  font-size: 1.6rem;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+
 }
 
 #start{
   font-family: yoon_dokripregular;
-  font-size: 2.5rem;
+  font-size: 3rem;
   align-self: center;
   border: 0px;
   color: black;
-  width: auto;
-  padding: 1.0rem;
-  height: auto;
+  width: 18rem;
+  height: 6rem;
   background-image: url(../hwatoo/src/start_btn_background.png);
-  background-color: transparent;
+  background-size: 18rem auto;
+  background-repeat: no-repeat;
 }
 
 .btn{
   font-family: yoon_dokripregular;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   align-self: center;
   border: 0px;
   color: black;
-  width: 80%;
+  width: 28.5rem;
   height: 8.0rem;
   object-fit: contain;
   background-image: url(../hwatoo/src/start_btn_background.png);
   background-color: transparent;
+  line-height: 1.17;
+  letter-spacing: -0.6px;
+  color: #000000;
 }
 
 .btn:focus, .btn:active, .btn:hover{
     box-shadow: none!important;
     outline: 0;
     color: black;
+    background-color: transparent;
 }
 
 .question_text{
-  min-height: 30rem;
-  font-size: 3.0rem;
-  vertical-align: center;
+  margin: auto;
+  display: table;
+  width: 30rem;
+  min-height: 37rem;
+  padding: 4rem;
+  padding-top: 7rem;
+  object-fit: contain;
+  align-items: center;
+  vertical-align: middle;
+  background-image: url(../hwatoo/src/question_background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#title{
+  display: table-cell;
+  font-size: 2.3rem;
+  line-height: 1.14;
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+
+#count{
+  display: table-row;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #8e8e8e;
+  line-height: 1.17;
+  letter-spacing: normal;
+}
+
+.progress-bar{
+  width: calc(100/12*1%);
+  min-height: 1.6rem;
+  background-color: rgb(227 30 10);
+  border-radius: 70px 70px 70px 70px;
+}
+
+.progress{
+  position: relative;
+  top: 0.6rem;
+  width: 30rem;
+  align-self: center;
+  min-height: 1.58rem;
+  border-radius: 70px 70px 70px 70px;
+  background-color: rgb(249 246 246);
+  -webkit-box-shadow: 0px 1px 1px 1px #cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 1px 1px 1px #cccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 1.7px 3px 1px #cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+#progressbar_card{
+  position: absolute;
+  width: 3.0rem;
+  top: 0;
+  z-index: 1;
+  right: 3rem;
+  object-fit: contain;
 }
 
 .copy-btn{
-  font-size: 1.0rem;
-  width: auto;
-  height: auto;
+  font-size: 1.7rem;
+  font-family: yoon_dokripregular;
+  align-self: center;
+  border: 0px;
+  color: black;
+  width: 14rem;
+  height: 4rem;
+  object-fit: contain;
+  background-image: url(../hwatoo/src/start_btn_background.png);
+  background-color: transparent;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #000000;
 }
 
 .card{
@@ -72,21 +177,27 @@ html{
 }
 
 #card1{
-  right: 40%;
+  width: 9rem;
+  right: 12rem;
+  top: 25rem;
 }
 
 #card2{
-  width: 14%;
-  right: 35%;
+  width: 8.5rem;
+  right: 10.5rem;
+  top: 23.2rem;
 }
 
 #card3{
-  width: 11%;
-  right: 30.5%;
+  width: 6.5rem;
+  right: 8.5rem;
+  top: 23.5rem;
 }
 
 #card4{
-  right: 23%;
+  width: 8.7rem;
+  right: 5rem;
+  top: 22.2rem;
 }
 
 .cards{
@@ -110,6 +221,26 @@ html{
 
 .result{
     display: none;
+    background-image: url(../hwatoo/src/result_background_dim.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result_container{
+  width: 95%;
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+  align-self: center;
+    background-image: url(../hwatoo/src/result_background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.result_animal_img{
+  width: 13rem;
 }
 
 .animal_exp{
@@ -158,33 +289,6 @@ html{
   align-content: center;
 }
 
-.progress-bar{
-  width: calc(100/12*1%);
-  min-height: 1.7rem;
-  background-color: rgb(227 30 10);
-  border-radius: 70px 70px 70px 70px;
-}
-
-.progress{
-  position: relative;
-  top: 0.6rem;
-  min-height: 1.68rem;
-  border-radius: 70px 70px 70px 70px;
-  background-color: rgb(249 246 246);
-  -webkit-box-shadow: 0px 1px 1px 1px #cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-  -moz-box-shadow:    0px 1px 1px 1px #cccc;  /* Firefox 3.5 - 3.6 */
-  box-shadow:         0px 1.7px 3px 1px #cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-}
-
-#progressbar_card{
-  position: absolute;
-  width: 3.0rem;
-  top: 0;
-  z-index: 1;
-  right: 0.5rem;
-  object-fit: contain;
-}
-
 .title_text{
   font-family: yoon_dokripregular;
   text-align: left;
@@ -212,7 +316,7 @@ html{
 }
 
 #img_friend{
-    width: 200.314 960 629 92px;
+    width: 11rem;
     height: 132.283 464 566 93px;
     margin: 0 auto;
     max-width: 100%;
@@ -221,7 +325,7 @@ html{
 }
 
 #img_enemy{
-    width: 200.314 960 629 92px;
+    width: 11rem;
     height: 132.283 464 566 93px;
     margin: 0 auto;
     max-width: 100%;
@@ -239,21 +343,23 @@ html{
 }
 
 #tree_right{
-  width: 30%;
+  width: 15rem;
   margin: 0 auto;
   display: inline-block;
   object-fit: contain;
   position: absolute;
   right: 0;
+  top: 10rem;
 }
 
 #tree_left{
-  width: 30%;
+  width: 18rem;
   margin: 0 auto;
   display: inline-block;
   object-fit: contain;
   position: absolute;
   left: 0;
+  top: 5rem;
 }
 
 .middle{
