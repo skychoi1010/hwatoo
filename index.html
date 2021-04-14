@@ -544,7 +544,11 @@
       ($("#TF").val() < 2) ? mbti+="F" : mbti+="T";
       ($("#JP").val() < 2) ? mbti+="P" : mbti+="J";
       alert(mbti);
-      
+      $(".container").css({
+          "background-image": 'url(../hwatoo/src/result_background_dim.png)',
+          "background-size": '100% auto',
+          "background-repeat": 'no-repeat'
+        });
       $("#img").attr("src",result[mbti]["img"]);
       $("#animal").html(result[mbti]["animal"]);
       $("#explain").html(result[mbti]["explain"]);
