@@ -19,7 +19,7 @@ html{
 ul li {
   list-style: outside;
   margin-left: 1rem;
-  list-style-image: url(/src/bullet.png);
+  list-style-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/bullet.png);
   font-size: 1.3rem;
   line-height: 1.7;
   letter-spacing: -0.11px;
@@ -51,7 +51,7 @@ ul li {
   padding-top: 5rem;
   padding-bottom: 5rem;
   object-fit: contain;
-  background-image: url(/src/start_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -103,7 +103,7 @@ ul li {
   min-height: 37rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-image: url(/src/question_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,7 +190,7 @@ ul li {
   color: black;
   width: 18rem;
   height: 6rem;
-  background-image: url(/src/start_btn_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);
   background-size: 18rem auto;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -205,7 +205,7 @@ ul li {
   width: 28.5rem;
   height: 8.0rem;
   object-fit: contain;
-  background-image: url(/src/start_btn_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);
   background-size: 100% 100%;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@ ul li {
   object-fit: contain;
   align-items: center;
   vertical-align: middle;
-  background-image: url(/src/question_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,7 +353,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/src/share_btn_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -372,7 +372,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/src/share_btn_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -392,7 +392,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/src/hwatoo_btn_background.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/hwatoo_btn_background.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -454,7 +454,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
     padding-top: 3rem;
     padding-bottom: 7rem;
     align-self: center;
-    background-image: url(/src/result_background.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
