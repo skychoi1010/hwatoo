@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'yoon_dokripregular';
-    src: url('/fonts/yoondokrip-webfont.woff2') format('woff2'),
+    src: url('../hwatoo/fonts/yoondokrip-webfont.woff2') format('woff2'),
          url('../hwatoo/fonts/yoondokrip-webfont.woff') format('woff'),
          url('../hwatoo/fonts/yoondokrip-webfont.ttf') format('truetype'),
          url('../hwatoo/fonts/yoondokrip-webfont.otf') format('opentype');
