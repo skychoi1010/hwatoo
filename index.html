@@ -151,7 +151,6 @@
     <input type="hidden" id = "JP" value="0">
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <script>
     // 문제번호s
@@ -667,18 +666,6 @@
 
   }
 
-  //img 비동기 처리..
-  var preloadImgs = ["https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png",
-                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png",
-                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png",
-                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png"];
-                      
-  function preload(preloadImgs) {
-    $(preloadImgs).each(function () {
-        $('<img />').attr('src',this).appendTo('body').css('display','none');
-    });
-  }
-
   //URL 복사
   function copyClip(url){
     var $temp = $('<input>');
@@ -701,9 +688,22 @@
     location.reload();
   });
 
+  //img 비동기 처리..
+  var preloadImgs = ["https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png",
+                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png"];
+
+  function preload(preloadImgs) {
+    $(preloadImgs).each(function () {
+        $('<img />').attr('src',this).appendTo('body').css('display','none');
+        var a = "preloading";
+        console.log(a);
+    });
+  }
+
   //card animation
   $( document ).ready( function() {
-    var jbTime = 100;
+    preload(preloadImgs);
+    var jbTime = 50;
     $( '#card1' ).animate( {
       opacity: '1'
     }, jbTime, function() {
