@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="font.css">
 <!-- <link rel='stylesheet' href='https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css'/> -->
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> -->
 
 </head>
 <body class="container">
@@ -40,10 +40,10 @@
   <article class = "start">
     <div class="header_container">
       <div class="title_text middle">
-        <h1 class = "header mt-5 text-left">소인,</h1>
+        <p class = "header mt-5 text-left">소인,</p>
       </div>
       <div class="subtitle_text middle">
-        <h3 class = "header2 mt-5 text-left">그대의 성질을<br>화투로 간파하겠노라 -.</h3>
+        <p class = "header2 mt-5 text-left">그대의 성질을<br>화투로 간파하겠노라 -.</p>
       </div>
       <div class="cards">
         <img id="card1" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card1.png">
@@ -68,8 +68,8 @@
       <span id="count" class="mt-5 text-center">1 / 12</span>
     </div>
     <input id = "type" type="hidden" value="EI">
-    <button id = "A" type="button" class="btn pick btn-secondary mt-5">"A"</button>
-    <button id = "B" type="button" class="btn pick btn-secondary mt-5">"B"</button>
+    <button id = "A" type="button" class="btn btn-secondary mt-5">"A"</button>
+    <button id = "B" type="button" class="btn btn-secondary mt-5">"B"</button>
     <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
   </article>
 
@@ -80,13 +80,13 @@
     </div><br>
     <div class="loading-container">
       <div class="header-loading">
-        <h1 class = "loading1 mt-5 text-left">소인,</h1>
+        <p class = "loading1 mt-5 text-left">소인,</p>
       </div>
       <div class="header2-loading">
-        <h3 class = "loading2 mt-5 text-left">그대의 성질을<br>화투로 간파하고 있소.</h3>
+        <p class = "loading2 mt-5 text-left">그대의 성질을<br>화투로 간파하고 있소.</p>
       </div>
       <div class="header3-loading">
-        <h1 class = "loading3 mt-5 text-center">쵸오큼만<br>기다려주시오-!</h1>
+        <p class = "loading3 mt-5 text-center">쵸오큼만<br>기다려주시오-!</p>
       </div>
     </div>
     <div class="godori_container">
@@ -100,26 +100,26 @@
     <p id="you" class="mt-5 text-center nanum">그대는...</p>
     <div class="result_container">
       <p id="animal_pre" class="animal_exp mt-5 text-center nanum">성실함과 책임감의 대명사</p>
-      <h2 id="animal" class="animal_exp text-center mt-5">킹갓제너럴 우직한 소</h2>
+      <p id="animal" class="animal_exp text-center mt-5">킹갓제너럴 우직한 소</p>
       <img id="img" class="mt-5 result_animal_img" src="" alt="animal">
-      <h2 class="mt-5 text-center">자네는..</h2><br>
+      <p id="you_are" class="mt-5 text-center">자네는...</p><br>
       <ul id="explain" class="animal_exp text-left nanum"></ul>
-      <h2 class="animal_exp mt-5 text-center">이 친구와 친해지고 싶다면<br>주목하게나!</h2><br>
+      <p class="animal_exp mt-5 text-center">이 친구와 친해지고 싶다면<br>주목하게나!</p><br>
       <ul id="animal_explain" class="animal_exp text-left nanum"></ul>
         <div id="row_container" class="animal container">
           <div class="animal friend">
-            <h2 class="text-center mt-5" style="font-size:1.8rem"><죽마고우 각!></h2>
+            <p class="text-center mt-5" style="font-size:1.7rem"><죽마고우 각!></p>
             <img id="img_friend" class="mt-5" src="" alt="friend">
-            <h3 id="animal_3" class="text-center mt-5" style="font-size:1.5rem">"뿌링클"</h3>
+            <p id="animal_3" class="text-center mt-5" style="font-size:1.4rem">"뿌링클"</p>
           </div>
           <div class="animal enemy">
-            <h2 class="text-center mt-5" style="font-size:1.8rem"><파국이다!></h2>
+            <p class="text-center mt-5" style="font-size:1.7rem"><파국이다!></p>
             <img id="img_enemy" class="mt-5" src="" alt="enemy">
-            <h3 id="animal_4" class="text-center mt-5" style="font-size:1.5rem">"고라니이잉"</h3>
+            <p id="animal_4" class="text-center mt-5" style="font-size:1.4rem">"고라니이잉"</p>
           </div>
         </div>
     </div>
-    <h2 id="animal" class="animal_exp text-center mt-5">죽마고우에게 공유하기</h2>
+    <p id="animal" class="animal_exp text-center mt-5">죽마고우에게 공유하기</p>
     <div class="copy">
       <button type="button" class="copy-btn btn">링크 복사</button>
       <button type="button" class="again btn">다시하기</button>
@@ -131,7 +131,7 @@
   </article>
 
   <!-- 수주받은 광고 -->
-  <a class="mt-5 banner" href = "https://www.wadiz.kr/web/wcomingsoon/rwd/106402">
+  <a class="mt-5 banner-container" href = "https://www.wadiz.kr/web/wcomingsoon/rwd/106402">
     <img class= "banner_img" src= "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/banner.jpeg" alt="banner">
   </a>
 
@@ -520,7 +520,7 @@
 
               "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTP.png",
 
-              "animal_3": "킹갓제너럴<br>우직한 소",
+              "animal_3": "킹갓제너럴 우직한 소",
 
               "animal_4": "달래달래 진달래"},
 
@@ -634,7 +634,7 @@
 
               "animal_3": "달래달래 진달래",
 
-              "animal_4": "킹갓제너럴<br>우직한 소"},
+              "animal_4": "킹갓제너럴 우직한 소"},
 
 
 
@@ -701,7 +701,7 @@
   }
 
   //card animation
-  $( document ).ready( function() {
+  $(document).ready( function() {
     preload(preloadImgs);
     var jbTime = 50;
     $( '#card1' ).animate( {
@@ -732,13 +732,14 @@
     var type = $("#type").val();
     var preValue = $("#"+type).val();
     $("#"+type).val(parseInt(preValue)+1);
-    console.log(parseInt(preValue)+1)
+    console.log(parseInt(preValue)+1);
     next();
   });
   // b는 점수 추가 안됨
   $("#B").click(function(){
     next();
   });
+
   // 12문제 다 풀면 문제 숨기고 결과 노출
   // 각 속성마다 2를 넘어가는 결과값 부여
   // 결과값 경고창으로 보여주고, 그 후에 이미지랑 설명 노출

@@ -3,44 +3,24 @@ article{
     flex-direction: column;
 }
 
-p{
-  font-weight: lighter;
-  color: rgb(112 112 112);
-}
-
 html{
   font-size: 10px;
 }
 
 .nanum{
   font-family: NanumSquare;
+  color: rgb(112 112 112);
 }
 
 ul li {
   list-style: outside;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
   list-style-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/bullet.png);
   font-size: 1.3rem;
-  line-height: 1.7;
-  letter-spacing: -0.11px;
-  text-align: left;
-  color: #707070;
-}
-
-#you{
-  line-height: 1.17;
-  letter-spacing: -0.11px;
-  text-align: left;
-  color: #707070;
-  font-size: 1.4rem;
-}
-
-#animal_pre{
-  padding-top: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.14;
-  text-align: center;
-  color: #707070;
+  line-height: 1.5;
+  list-style-position: outside;
 }
 
 .header_container{
@@ -204,6 +184,7 @@ ul li {
   color: black;
   width: 28.5rem;
   height: 8.0rem;
+  margin: 0 auto;
   object-fit: contain;
   background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);
   background-size: 100% 100%;
@@ -256,15 +237,16 @@ ul li {
 }
 
 .progress-bar{
-  width: calc(100/12*1%);
+  position: absolute;
+  width: calc(100/12 * 1%);
   min-height: 1.6rem;
+  align-self: center;
   background-color: rgb(227 30 10);
   border-radius: 70px 70px 70px 70px;
 }
 
 .progress{
   position: relative;
-  top: 0.6rem;
   width: 30rem;
   align-self: center;
   min-height: 1.58rem;
@@ -273,6 +255,39 @@ ul li {
   -webkit-box-shadow: 0px 1px 1px 1px #cccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
   -moz-box-shadow:    0px 1px 1px 1px #cccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         0px 1.7px 3px 1px #cccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.progress-container{
+  position: relative;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+
+#progressbar_card{
+  position: absolute;
+  bottom: -1rem;
+  right: -0.7rem;
+  display: none;
+  visibility: hidden;
+  width: 3.0rem;
+  z-index: 1;
+  object-fit: contain;
+  animation: fadeIn 0.3s;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      visibility: visible;
+      opacity: 0;
+  }
+  to {
+      visibility: visible;
+      opacity: 1;
+  }
 }
 
 .progress-loading {
@@ -290,36 +305,6 @@ ul li {
   }
   100% {
     width: 100%;
-  }
-}
-
-.progress-container{
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  vertical-align: middle;
-  justify-content: center;
-}
-
-#progressbar_card{
-  display: none;
-  width: 3.0rem;
-  flex: 0 1;
-  z-index: 1;
-  margin-left: -1.2rem;;
-  margin-right: -1.2rem;
-  margin-bottom: -1.5rem;
-  object-fit: contain;
-  animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-  99% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
   }
 }
 
@@ -363,6 +348,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   font-size: 1.7rem;
   font-family: yoon_dokripregular;
   align-self: center;
+  vertical-align: middle;
   border: 0px;
   color: black;
   width: 18rem;
@@ -464,17 +450,46 @@ a:hover, a:visited, a:link, a:focus, a:active {
   width: 13rem;
 }
 
-.animal_exp{
-  padding-left: 10%;
-  padding-right: 10%;
+#you{
+  line-height: 1.17;
+  letter-spacing: -0.11px;
+  text-align: left;
+  color: #707070;
+  font-size: 1.4rem;
+}
+
+#animal_pre{
+  padding-top: 2rem;
+  margin-bottom: -5.5rem;
+  font-size: 1.2rem;
+  line-height: 1.14;
+  text-align: center;
+  color: #707070;
 }
 
 #animal{
+  font-size: 2.3rem;
   padding-left: 15%;
   padding-right: 15%;
 }
 
+#you_are{
+  margin: 0 auto;
+  font-size: 2.1rem;
+  margin-bottom: -2rem;
+}
+
+.animal_exp{
+  padding-top: 3rem;
+  font-size: 2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 0;
+  margin-bottom: -1rem;
+}
+
 #row_container{
+  margin-top: 3rem;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
@@ -491,18 +506,14 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 .animal .enemy{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  flex-grow: 1;
 }
 
-.friend{
-    display: none;
-}
-
-.enemy{
-    display: none;
+#animal_3, #animal_4{
+  margin-bottom: 2rem;
 }
 
 .result{
@@ -519,7 +530,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 
 #img_friend{
     width: 11rem;
-    height: 132.283 464 566 93px;
+    height: auto;
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
@@ -528,7 +539,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 
 #img_enemy{
     width: 11rem;
-    height: 132.283 464 566 93px;
+    height: auto;
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
@@ -536,11 +547,9 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #img{
-    width: 200.314 960 629 92px;
-    height: 132.283 464 566 93px;
+    width: 15rem;
+    height: auto;
     margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
     display: block;
 }
 
@@ -576,10 +585,18 @@ a:hover, a:visited, a:link, a:focus, a:active {
 .banner{
     display: flex;
     justify-content: center;
-    width: 300px;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    height: 20rem;
     margin: 0 auto;
 }
 
 .banner_img{
-    width: 300px;
+    width: 30rem;
 }
