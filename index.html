@@ -39,7 +39,7 @@
 
   <!-- 시작화면 -->
   <article class = "start">
-    <div class="header_container">
+    <div class="header_container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png);">
       <div class="title_text middle">
         <p class = "header mt-5 text-left">소인,</p>
       </div>
@@ -53,7 +53,7 @@
         <img id="card4" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card4.png">
       </div>
     </div>
-    <button id="start" type="button" class="btn btn-secondary mt-5" onclick='start();'>시작하거라!</button>
+    <button id="start" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);" onclick='start();'>시작하거라!</button>
   </article>
 
   <!-- 문제화면 -->
@@ -64,13 +64,13 @@
       </div>
         <img id="progressbar_card" class="mt-5" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/progressbar_card.png" alt="card">
     </div><br>
-    <div class="question_text text-center">
+    <div class="question_text text-center" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);">
       <span id="title">문제</span>
       <span id="count" class="mt-5 text-center">1 / 12</span>
     </div>
     <input id = "type" type="hidden" value="EI">
-    <button id = "A" type="button" class="btn btn-secondary mt-5">"A"</button>
-    <button id = "B" type="button" class="btn btn-secondary mt-5">"B"</button>
+    <button id = "A" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);">"A"</button>
+    <button id = "B" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);">"B"</button>
     <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
   </article>
 
@@ -79,7 +79,7 @@
     <div class="progress mt-5">
       <div class="progress-loading" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
     </div><br>
-    <div class="loading-container">
+    <div class="loading-container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);">
       <div class="header-loading">
         <p class = "loading1 mt-5 text-left">소인,</p>
       </div>
@@ -99,7 +99,7 @@
   <!-- 결과화면 -->
   <article class="result">
     <p id="you" class="mt-5 text-center nanum">그대는...</p>
-    <div class="result_container">
+    <div class="result_container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png);">
       <p id="animal_pre" class="animal_exp mt-5 text-center nanum">성실함과 책임감의 대명사</p>
       <p id="animal" class="animal_exp text-center mt-5">킹갓제너럴 우직한 소</p>
       <img id="img" class="mt-5 result_animal_img" src="" alt="animal">
@@ -122,11 +122,11 @@
     </div>
     <p id="animal" class="animal_exp text-center mt-5">죽마고우에게 공유하기</p>
     <div class="copy">
-      <button type="button" class="copy-btn btn">링크 복사</button>
-      <button type="button" class="again btn">다시하기</button>
+      <button type="button" class="copy-btn btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);">링크 복사</button>
+      <button type="button" class="again btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);">다시하기</button>
     </div>
     <a class="mt-5 banner" style="text-decoration:none;" href = "https://www.wadiz.kr/web/wcomingsoon/rwd/106402">
-      <button type="button" class="hwatoo btn">당신을 위한 특별한<br>화투 보러가기-!</button>
+      <button type="button" class="hwatoo btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/hwatoo_btn_background.png);">당신을 위한 특별한<br>화투 보러가기-!</button>
     </a>
 
   </article>
@@ -789,6 +789,8 @@
           });
         $(".result").show();
       }, 3000);
+
+
 
     }
 

@@ -31,7 +31,7 @@ ul li {
   padding-top: 5rem;
   padding-bottom: 5rem;
   object-fit: contain;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png); */
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -83,7 +83,7 @@ ul li {
   min-height: 37rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png); */
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -170,7 +170,7 @@ ul li {
   color: black;
   width: 18rem;
   height: 6rem;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png); */
   background-size: 18rem auto;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -186,7 +186,7 @@ ul li {
   height: 8.0rem;
   margin: 0 auto;
   object-fit: contain;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png); */
   background-size: 100% 100%;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -213,7 +213,7 @@ ul li {
   object-fit: contain;
   align-items: center;
   vertical-align: middle;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png); */
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -338,7 +338,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -358,7 +358,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -378,7 +378,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/hwatoo_btn_background.png);
+  /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/hwatoo_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -395,29 +395,32 @@ a:hover, a:visited, a:link, a:focus, a:active {
 #card1{
   width: 9rem;
   right: 12rem;
-  top: 25rem;
+  top: 2rem;
 }
 
 #card2{
   width: 8.5rem;
   right: 10.5rem;
-  top: 23.2rem;
+  top: 0.2rem;
 }
 
 #card3{
   width: 6.5rem;
   right: 8.5rem;
-  top: 23.5rem;
+  top: 0.5rem;
 }
 
 #card4{
   width: 8.7rem;
   right: 5rem;
-  top: 22.2rem;
+  top: -0.8rem;
 }
 
 .cards{
-  display: inline-flex;
+  position: absolute;
+  width: 30rem;
+  margin-left: 3.5rem;
+  text-align: center;
 }
 
 #count{
@@ -440,7 +443,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
     padding-top: 3rem;
     padding-bottom: 7rem;
     align-self: center;
-    background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png);
+    /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -554,9 +557,9 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_right{
-  width: 15rem;
+  width: 30%;
+  min-width: 15rem;
   margin: 0 auto;
-  display: inline-block;
   object-fit: contain;
   position: absolute;
   right: 0;
@@ -564,9 +567,9 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_left{
-  width: 18rem;
+  width: 30%;
+  min-width: 18rem;
   margin: 0 auto;
-  display: inline-block;
   object-fit: contain;
   position: absolute;
   left: 0;
