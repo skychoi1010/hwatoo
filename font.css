@@ -11,6 +11,7 @@
 @font-face{
     font-family:'NanumSquare';
     src: url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.eot'),
+         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.woff2') format('woff2'),
          url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.woff') format('woff'),
          url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.ttf') format('truetype'),
          url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.otf') format('opentype');
