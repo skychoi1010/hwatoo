@@ -15,9 +15,10 @@ html{
 
 ul li {
   list-style: outside;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
   list-style-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/square.png);
   font-size: 1.3rem;
   line-height: 1.5;
@@ -172,6 +173,7 @@ ul li {
   color: black;
   width: 18rem;
   height: 6rem;
+  margin-bottom: 1rem;
   /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png); */
   background-size: 18rem auto;
   background-repeat: no-repeat;
@@ -207,7 +209,7 @@ ul li {
 
 .question_text{
   margin: 0 auto;
-  margin-bottom: -2rem;
+  margin-bottom: -1rem;
   display: table;
   width: 30rem;
   min-height: 37rem;
