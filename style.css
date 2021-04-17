@@ -242,7 +242,7 @@ ul li {
   font-size: 1.5rem;
   color: #8e8e8e;
   line-height: 1.17;
-  letter-spacing: 0.2rem;;
+  letter-spacing: 0.2rem;
 }
 
 .progress-bar{
@@ -431,10 +431,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
   margin-bottom: 2rem;
   margin-left: 3.5rem;
   text-align: center;
-}
-
-#count{
-  color: rgb(142 142 142);
 }
 
 .question{
