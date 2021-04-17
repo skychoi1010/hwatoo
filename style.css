@@ -579,13 +579,12 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_left{
-  width: 23%;
-  min-width: 15rem;
+  width: 47%;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
   left: 0;
-  top: 5rem;
+  top: 5.5rem;
 }
 
 .kakao_ad{
