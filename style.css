@@ -453,7 +453,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
     padding-bottom: 6rem;
     align-self: center;
     /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png); */
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
     margin: 0 auto;
