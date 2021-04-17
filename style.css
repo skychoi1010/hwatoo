@@ -29,7 +29,7 @@ ul li {
   margin: auto;
   width: 30rem;
   min-height: 37rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   object-fit: contain;
@@ -46,6 +46,8 @@ ul li {
 
 .header{
   margin: 0 auto;
+  margin-left: -2rem;
+  margin-bottom: -5rem;
   min-width: 10rem;
   font-family: yoon_dokripregular;
   font-size: 3.5rem;
@@ -82,11 +84,11 @@ ul li {
 .loading-container{
   margin: auto;
   width: 30rem;
-  min-height: 37rem;
+  min-height: 33rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
   /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png); */
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
@@ -101,7 +103,7 @@ ul li {
   line-height: 1.18;
   letter-spacing: normal;
   text-align: left;
-  margin-left: 7rem;
+  margin-left: 6rem;
   color: #000000;
 }
 
@@ -110,7 +112,7 @@ ul li {
   font-family: yoon_dokripregular;
   font-size: 1.6rem;
   line-height: 1.13;
-  margin-left: 11rem;
+  margin-left: 9rem;
   margin-top: -3rem;
   letter-spacing: normal;
   text-align: left;
@@ -128,7 +130,7 @@ ul li {
 }
 
 .loading1{
-  font-size: 3.7rem;
+  font-size: 3.5rem;
 }
 
 .loading2{
@@ -151,17 +153,18 @@ ul li {
 
 #godori{
   object-fit: contain;
-  width: 15rem;
+  width: 14rem;
   align-self: center;
 }
 
 #godori_age{
   font-family: yoon_dokripregular;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-align: right;
   width: 10rem;
   margin-top: -2rem;
-  margin-left: 19rem;
+  margin-left: 14rem;
+  margin-bottom: 1rem;
   color: #000000;
 }
 
@@ -201,10 +204,10 @@ ul li {
 }
 
 .btn:focus, .btn:active, .btn:hover{
-    box-shadow: none!important;
-    outline: 0;
-    color: black;
-    background-color: transparent;
+  box-shadow: none!important;
+  outline: 0;
+  color: black;
+  background-color: transparent;
 }
 
 .question_text{
@@ -212,21 +215,21 @@ ul li {
   margin-bottom: -1rem;
   display: table;
   width: 30rem;
-  min-height: 37rem;
+  min-height: 32rem;
   padding: 4rem;
   padding-top: 7rem;
   object-fit: contain;
   align-items: center;
   vertical-align: middle;
   /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png); */
-  background-size: 100% auto;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #title{
   display: table-cell;
-  font-size: 2.3rem;
+  font-size: 2rem;
   line-height: 1.14;
   letter-spacing: normal;
   vertical-align: middle;
@@ -234,7 +237,7 @@ ul li {
 
 #count{
   display: table-row;
-  height: 3rem;
+  height: 2rem;
   font-size: 1.5rem;
   color: #8e8e8e;
   line-height: 1.17;
@@ -273,14 +276,14 @@ ul li {
 #progressbar_card{
   position: absolute;
   bottom: -1rem;
-  right: -0.7rem;
+  right: -0.9rem;
   display: none;
   visibility: hidden;
   width: 3.0rem;
   z-index: 1;
   object-fit: contain;
   animation: fadeIn 0.3s;
-  animation-delay: 0.4s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
 }
 
@@ -389,7 +392,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 .card{
-  width: 15%;
   opacity: 0;
   background-color: transparent;
   border: 0px;
@@ -424,6 +426,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 .cards{
   position: absolute;
   width: 30rem;
+  margin-top: -3rem;
   margin-left: 3.5rem;
   text-align: center;
 }
@@ -567,18 +570,17 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_right{
-  width: 27%;
-  min-width: 15rem;
+  width: 37%;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
   right: 0;
-  top: 6.5rem;
+  top: 5.5rem;
 }
 
 #tree_left{
-  width: 30%;
-  min-width: 18rem;
+  width: 23%;
+  min-width: 15rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
