@@ -1,6 +1,7 @@
 article{
     display: flex;
     flex-direction: column;
+    margin-top: -1rem;
 }
 
 html{
@@ -142,6 +143,7 @@ ul li {
   width: auto;
   height: auto;
   margin-bottom: -4rem;
+  margin-top: -3rem;
   display: flex;
   flex-direction: column;
 }
@@ -184,7 +186,6 @@ ul li {
   color: black;
   width: 28.5rem;
   height: 8.0rem;
-  margin: 0 auto;
   object-fit: contain;
   /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png); */
   background-size: 100% 100%;
@@ -194,6 +195,7 @@ ul li {
   line-height: 1.17;
   letter-spacing: -0.6px;
   color: #000000;
+  z-index: 1;
 }
 
 .btn:focus, .btn:active, .btn:hover{
@@ -204,7 +206,8 @@ ul li {
 }
 
 .question_text{
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: -2rem;
   display: table;
   width: 30rem;
   min-height: 37rem;
@@ -233,7 +236,7 @@ ul li {
   font-size: 1.5rem;
   color: #8e8e8e;
   line-height: 1.17;
-  letter-spacing: normal;
+  letter-spacing: 0.2rem;;
 }
 
 .progress-bar{
@@ -433,6 +436,10 @@ a:hover, a:visited, a:link, a:focus, a:active {
     min-height: 30rem;
 }
 
+#A{
+  margin-bottom: -2rem;
+}
+
 .result{
     display: none;
 }
@@ -441,12 +448,14 @@ a:hover, a:visited, a:link, a:focus, a:active {
     width: 95%;
     padding: 2rem;
     padding-top: 3rem;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
     align-self: center;
     /* background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png); */
-    background-size: 100% 100%;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    margin: 0 auto;
+    margin-bottom: -2.5rem;
 }
 
 .result_animal_img{
@@ -516,7 +525,10 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #animal_3, #animal_4{
+  margin: 0 auto;
+  margin-top: -3rem;
   margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 .result{
@@ -524,46 +536,42 @@ a:hover, a:visited, a:link, a:focus, a:active {
   align-content: center;
 }
 
-#share{
-  display: flex;
+.friend_header, .enemy_header{
+  margin-bottom: -1rem;
+  font-size: 1.7rem;
+}
+
+#img_friend, #img_enemy{
+  width: 11rem;
   height: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-#img_friend{
-    width: 11rem;
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-}
-
-#img_enemy{
-    width: 11rem;
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-bottom: -2rem;
 }
 
 #img{
-    width: 15rem;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+#share{
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 
 #tree_right{
-  width: 30%;
+  width: 27%;
   min-width: 15rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
   right: 0;
-  top: 10rem;
+  top: 6.5rem;
 }
 
 #tree_left{
@@ -574,10 +582,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
   position: absolute;
   left: 0;
   top: 5rem;
-}
-
-.share{
-    margin: 0 auto;
 }
 
 .kakao_ad{
