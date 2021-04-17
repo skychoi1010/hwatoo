@@ -15,7 +15,7 @@ html{
 
 ul li {
   list-style: outside;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
   list-style-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/square.png);
