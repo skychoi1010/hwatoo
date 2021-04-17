@@ -426,7 +426,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 .cards{
   position: absolute;
   width: 30rem;
-  margin-top: -3rem;
+  margin-bottom: 2.5rem;
   margin-left: 3.5rem;
   text-align: center;
 }
