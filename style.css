@@ -256,6 +256,7 @@ ul li {
 
 .progress{
   position: relative;
+  margin-right: 0.25rem;
   width: 30rem;
   align-self: center;
   min-height: 1.58rem;
