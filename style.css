@@ -25,6 +25,15 @@ ul li {
   list-style-position: outside;
 }
 
+#visits{
+  font-family: yoon_dokripregular;
+  font-size: 1.2rem;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: -2rem;
+}
+
 .header_container{
   width: 30rem;
   height: 35rem;
@@ -569,7 +578,8 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_right{
-  width: 13.5rem;
+  width: 37%;
+  max-width: 22rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
@@ -578,7 +588,8 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_left{
-  width: 17.5rem;
+  width: 47%;
+  max-width: 29rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
