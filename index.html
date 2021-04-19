@@ -29,18 +29,18 @@
 <link rel="stylesheet" href="font.css">
 <!-- <link rel='stylesheet' href='https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css'/> -->
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> -->
-<link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/yoondokrip-webfont.woff2">
-<link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquare.woff2">
+<link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/yoondokrip.woff2">
+<link rel="preload" as="font" crossorigin="crossorigin" type="font/woff2" href="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.woff2">
 
 </head>
 <body class="container">
 
-  <img id="tree_right" class="mt-5" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/tree_right.png" alt="title">
-  <img id="tree_left" class="mt-5" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/tree_left.png" alt="title">
+  <img id="tree_right" class="mt-5" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/tree_right.png" alt="title">
+  <img id="tree_left" class="mt-5" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/tree_left.png" alt="title">
 
   <!-- 시작화면 -->
   <article class = "start">
-    <div class="header_container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_background.png);">
+    <div class="header_container" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_background.png);">
       <div class="title_text middle">
         <p class = "header mt-5 text-left">소인,</p>
       </div>
@@ -48,13 +48,13 @@
         <p class = "header2 mt-5 text-left">그대의 성질을<br>화투로 간파하겠노라 -.</p>
       </div>
       <div class="cards">
-        <img id="card1" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card1.png">
-        <img id="card2" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card2.png">
-        <img id="card3" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card3.png">
-        <img id="card4" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/card4.png">
+        <img id="card1" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/card1.png">
+        <img id="card2" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/card2.png">
+        <img id="card3" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/card3.png">
+        <img id="card4" class="mt-5 card" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/card4.png">
       </div>
     </div>
-    <button id="start" type="button" class="btn btn-primary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);" onclick='start();'>시작하거라!</button>
+    <button id="start" type="button" class="btn btn-primary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_btn_background.png);" onclick='start();'>시작하거라!</button>
   </article>
 
   <!-- 문제화면 -->
@@ -63,15 +63,15 @@
       <div class="progress mt-5">
         <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
-        <img id="progressbar_card" class="mt-5" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/progressbar_card.png" alt="card">
+        <img id="progressbar_card" class="mt-5" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/progressbar_card.png" alt="card">
     </div><br>
-    <div class="question_text text-center" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);">
+    <div class="question_text text-center" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/question_background.png);">
       <span id="title">문제</span>
       <div id="count" class="mt-5 text-center"></div>
     </div>
     <input id = "type" type="hidden" value="EI">
-    <button id = "A" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);">"A"</button>
-    <button id = "B" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/start_btn_background.png);">"B"</button>
+    <button id = "A" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_btn_background.png);">"A"</button>
+    <button id = "B" type="button" class="btn btn-secondary mt-5" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_btn_background.png);">"B"</button>
     <!-- a를 눌렀을 때만 점수가 저장, b누르면 점수 저장 X -->
   </article>
 
@@ -80,7 +80,7 @@
     <div class="progress mt-5">
       <div class="progress-loading" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
     </div><br>
-    <div class="loading-container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png);">
+    <div class="loading-container" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/question_background.png);">
       <div class="header-loading">
         <p class = "loading1 mt-5 text-left">소인,</p>
       </div>
@@ -92,7 +92,7 @@
       </div>
     </div>
     <div class="godori_container">
-      <img id="godori" class="mt-5" src="https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/godori.png">
+      <img id="godori" class="mt-5" src="https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/godori.png">
       <p id="godori_age">고돌이씨 (1살)</p>
     </div>
   </article>
@@ -100,7 +100,7 @@
   <!-- 결과화면 -->
   <article class="result">
     <p id="you" class="mt-5 text-center nanum">그대는...</p>
-    <div class="result_container" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png);">
+    <div class="result_container" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/result_background.png);">
       <p id="animal_pre" class="animal_exp mt-5 text-center nanum">성실함과 책임감의 대명사</p>
       <p id="animal" class="animal_exp text-center mt-5">킹갓제너럴 우직한 소</p>
       <img id="img" class="mt-5 result_animal_img" src="" alt="animal">
@@ -123,18 +123,18 @@
     </div>
     <div id="share" class="animal_exp text-center mt-5"><span>죽마고우에게 공유하기</span></div>
     <div class="copy">
-      <button type="button" class="copy-btn btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);">링크 복사</button>
-      <button type="button" class="again btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/share_btn_background.png);">다시하기</button>
+      <button type="button" class="copy-btn btn" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/share_btn_background.png);">링크 복사</button>
+      <button type="button" class="again btn" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/share_btn_background.png);">다시하기</button>
     </div>
     <a class="mt-5 banner" style="text-decoration:none;" href = "https://www.wadiz.kr/web/wcomingsoon/rwd/106402">
-      <button type="button" class="hwatoo btn" style="background-image: url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/hwatoo_btn_background.png);">당신을 위한 특별한<br>화투 보러가기-!</button>
+      <button type="button" class="hwatoo btn" style="background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/hwatoo_btn_background.png);">당신을 위한 특별한<br>화투 보러가기-!</button>
     </a>
 
   </article>
 
   <!-- 수주받은 광고 -->
   <a class="mt-5 banner-container" href = "https://www.wadiz.kr/web/wcomingsoon/rwd/106402">
-    <img class= "banner_img" src= "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/hwatu_banner.jpeg" alt="banner">
+    <img class= "banner_img" src= "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/hwatu_banner.jpeg" alt="banner">
   </a>
 
   <!-- 카카오 애드핏 -->
@@ -161,7 +161,7 @@
        } else {
           pageCount = myStorage.getItem("pageCount");
           pageCount = pageCount + 1;
-          myStorage.setItem('pageCount', pageCount );
+          myStorage.setItem('pageCount', pageCount);
        }
        console.log('page view count', myStorage.getItem("pageCount"));
     });
@@ -236,11 +236,11 @@
                                 '무뚝뚝해보여도 이 친구가 사실은 정이 많다네. 요즘 말로… "츤데레"라고 하는가?',
                                 "당일에 갑자기 약속 잡는 것보다는 미리미리 약속 잡는 걸 선호한다네"],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFJ.png",
 
               "animal_3": "알록달록 단풍잎",
 
@@ -264,11 +264,11 @@
                                   "혼자 집에서 노는 시간을 소중히 여기는 친구라네. 허나 밖에 나가 노는 것도 좋아하지.",
                                   "친구들이 싸우면 꽤나 당황할 걸세. 다들 사이 좋게 지내주길 바란다네."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTJ.png",
 
               "animal_3": "논리 끝판왕 통통<br>튀는 물수제비",
 
@@ -291,11 +291,11 @@
                                   "겉으로는 차가워보여도 속은 정말 따뜻하다네.",
                                   "모르는 사람들 가득한 모임보다는 친한 친구들과 노는 것을 선호한다네."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTJ.png",
 
               "animal_3": "조잘조잘 웃음보따리",
 
@@ -319,11 +319,11 @@
                               "감정 표현에 서툴러도 속으로는 고마워하는 것들이 많다네",
                               "가식이나 거짓말을 좋아하지 않는다네. 솔직하게 대해주게나."],
 
-            "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTJ_b.png",
+            "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTJ_b.png",
 
-            "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFP.png",
+            "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFP.png",
 
-            "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFJ.png",
+            "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFJ.png",
 
             "animal_3": "앗싸 호랑나비!<br>으아아~ 들이대!",
 
@@ -346,11 +346,11 @@
                                   "혼자만의 시간을 존중해줘야 한다네.",
                                   "마음에 없는 말은 못한다네. 이 친구가 하는 말은 다 진심일 걸세."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFP.png",
 
               "animal_3": "강강술래 세계선수권",
 
@@ -375,11 +375,11 @@
                                 "먼저 다가와주면 속으로 덩실덩실 춤추고 있을 걸세.",
                                 "이 친구와 연락이 잘 안 되어도 이해해주게나. 별 뜻은 없고 그저 조금 귀찮아 할 뿐이라네."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTP.png",
 
               "animal_3": "허니콤보 두 개,<br>레드콤보 하나-!",
 
@@ -403,11 +403,11 @@
                                   "이 친구는 믿고 의지하고 싶은 사람이 생기면 일편단심이라네.",
                                   "친구들이 싸우면 정말 힘들어할 걸세. 모두 평화롭게 지내주게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTP.png",
 
               "animal_3": "귀욤뽀오-짝<br>이성적인 참새",
 
@@ -430,11 +430,11 @@
                                   "소중한 사람일수록 위로보다는 해결책을 제시하는 경향이 있다네. 이것이 애정표현이니 어여삐 봐주시게.",
                                   "혼자 보내는 시간을 존중해주게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFP.png",
 
               "animal_3": "쵸오큼 귀여운<br>빤짝빤짝 동박새",
 
@@ -458,11 +458,11 @@
                                   "친한 사람한테는 막 대하고 장난도 많이 친다네. 애정 표현이니 오해하지 말아주시게.",
                                   "이 친구는 돌려 말하면 잘 못 알아듣는다네. 직접적으로 말해주게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFP.png",
 
               "animal_3": "마이웨이 SSAP 선비",
 
@@ -486,11 +486,11 @@
                                   "'아무거나’라고 하면 진짜 아무거나 다 좋다는 뜻이라네.",
                                   "이 친구가 좀 덜렁거려도 많이 챙겨주게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTP.png",
 
               "animal_3": "학수고대 무야호",
 
@@ -513,11 +513,11 @@
                                   "외유내강 아니고 외강내유. 겉으로는 강해보여도 속은 여린 친구라네.",
                                   "이 친구가 다 괜찮다고 하더라도 최소한의 예의는 지켜주게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTP.png",
 
               "animal_3": "킹갓제너럴 우직한 소",
 
@@ -541,11 +541,11 @@
                                   "친해지고 싶으면 놀리고 장난치는 편이라네.",
                                   "피상적인 관계보다는 가식 없고 진실된 관계를 원할 걸세."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTP_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTP_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFJ.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFJ.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFP.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFP.png",
 
               "animal_3": "마당을 나온 뿌우링클",
 
@@ -569,11 +569,11 @@
                                   "신나서 계획 짜는데 반응 없으면 서운해할 걸세.",
                                   "겉으로는 차가워보여도 의리와 정이 넘치는 친구라네."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESTJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESTJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INFJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INFJ.png",
 
               "animal_3": "그네뛰기 국가대표",
 
@@ -597,11 +597,11 @@
                                 "칭찬해주면 무척 좋아할 걸세.",
                                 "상대방 반응을 꽤나 신경쓴다네. 적극적으로 호응해주시게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ESFJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ESFJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/INTJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/INTJ.png",
 
               "animal_3": "산기슭 쿵쿵따",
 
@@ -625,11 +625,11 @@
                                 "칭찬해주고 애정 표현을 듬뿍 해준다면 아주 좋아할 걸세.",
                                 "이 친구는 모두가 평화롭길 바란다네. 싸우지들 마시게나."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENFJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENFJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISTJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISTJ.png",
 
               "animal_3": "달래달래 진달래",
 
@@ -653,11 +653,11 @@
                                   "자기 말에 동의해주면 아주 좋아한다네.",
                                   "이 친구만큼 효율을 사랑하는 사람도 없다네. 다들 효율적으로 행동해주면 고맙겠네."],
 
-              "img": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ENTJ_b.png",
+              "img": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ENTJ_b.png",
 
-              "img_friend": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFP.png",
+              "img_friend": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFP.png",
 
-              "img_enemy": "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/ISFJ.png",
+              "img_enemy": "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/ISFJ.png",
 
               "animal_3": "사슴 같아 보이는<br>고라니이잉",
 
@@ -688,9 +688,9 @@
   });
 
   //img 비동기 처리..
-  var preloadImgs = ["https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/question_background.png",
-                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/godori.png",
-                      "https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background.png"];
+  var preloadImgs = ["https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/question_background.png",
+                      "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/godori.png",
+                      "https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/result_background.png"];
 
   function preload(preloadImgs) {
     $(preloadImgs).each(function () {
@@ -782,7 +782,7 @@
       setTimeout(function() {
         $(".loading").hide();
         $("body").css({
-            "background-image": 'url(https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/src/result_background_dim.png)',
+            "background-image": 'url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/result_background_dim.png)',
             "background-size": '100% auto',
             "background-repeat": 'no-repeat',
             "background-position": 'center 40%'

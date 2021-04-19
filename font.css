@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'yoon_dokripregular';
-    src: url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/yoondokrip-webfont.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/yoondokrip-webfont.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/yoondokrip-webfont.ttf') format('truetype'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/yoondokrip-webfont.otf') format('opentype');
+    src: url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/yoondokrip.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/yoondokrip.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/yoondokrip.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/yoondokrip.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family:'NanumSquare';
-    src: url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.eot'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquare.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.woff') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.ttf') format('truetype'),
-         url('https://cdn.jsdelivr.net/gh/skychoi1010/hwatoo/fonts/NanumSquareR.otf') format('opentype');
+    src: url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.eot'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.ttf') format('truetype'),
+         url('https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/fonts/NanumSquareR.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
