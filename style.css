@@ -569,7 +569,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_right{
-  width: 37%;
+  width: 13.5rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
@@ -578,7 +578,7 @@ a:hover, a:visited, a:link, a:focus, a:active {
 }
 
 #tree_left{
-  width: 47%;
+  width: 17.5rem;
   margin: 0 auto;
   object-fit: contain;
   position: absolute;
@@ -608,4 +608,13 @@ a:hover, a:visited, a:link, a:focus, a:active {
 
 .banner_img{
     width: 30rem;
+}
+
+#copyright{
+  font-family: yoon_dokripregular;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: -1rem;
 }
