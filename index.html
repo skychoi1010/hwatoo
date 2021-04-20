@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="naver-site-verification" content="3a285582ba586f48558ad3d94b0443ec945bc9c8" />
-
+  <meta name="naver-site-verification" content="435777efe0e0a741cce5d7a5094c625e546300a9" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-07QP6CPS2Q"></script>
   <script>
@@ -14,8 +14,6 @@
     gtag('js', new Date());
     gtag('config', 'G-07QP6CPS2Q');
   </script>
-  <meta name="google-signin-client_id" content="394937987702-mljsdgccfr423nv7h1749rij7p353b1q.apps.googleusercontent.com">
-  <meta name="google-signin-scope" content="https://www.googleapis.com/auth/analytics.readonly">
 <!-- 검색 키워드(제목) -->
 <title>화투 테스트</title>
 
@@ -162,6 +160,7 @@
       }
       return val;
     }
+
     function animateValue(id, start, end, duration) {
       // assumes integer values for start and end
       var obj = document.getElementById(id);
@@ -188,6 +187,7 @@
         var timer = setInterval(run, stepTime);
         run();
     }
+    
     $.getJSON("https://api.countapi.xyz/hit/ssangpimaeul.com/visits", function(response) {
       animateValue("visitors", 0, response.value, 1000);
     });

@@ -45,7 +45,6 @@ ul li {
   padding-top: 5rem;
   padding-bottom: 5rem;
   object-fit: contain;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_background.png); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -99,7 +98,6 @@ ul li {
   min-height: 33rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/question_background.png); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -189,7 +187,6 @@ ul li {
   width: 18rem;
   height: 6rem;
   margin-bottom: -1rem;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_btn_background.png); */
   background-size: 18rem auto;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -204,7 +201,6 @@ ul li {
   width: 28.5rem;
   height: 8.0rem;
   object-fit: contain;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/start_btn_background.png); */
   background-size: 100% 100%;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -233,7 +229,6 @@ ul li {
   object-fit: contain;
   align-items: center;
   vertical-align: middle;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/question_background.png); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -358,7 +353,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/share_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -378,7 +372,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/share_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
   color: #000000;
@@ -398,7 +391,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/hwatoo_btn_background.png); */
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -464,7 +456,6 @@ a:hover, a:visited, a:link, a:focus, a:active {
     padding-top: 3rem;
     padding-bottom: 6rem;
     align-self: center;
-    /* background-image: url(https://cdn.jsdelivr.net/gh/hwatusignal/ssangpimaeul/src/result_background.png); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top;
