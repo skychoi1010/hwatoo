@@ -2,3 +2,4 @@ User-agent: *
 Allow:/
 
 Sitemap: https://www.ssangpimaeul.com/sitemap.xml
+Sitemap: http://www.ssangpimaeul.com/sitemap.xml
