@@ -1,5 +1,7 @@
 User-agent: *
 Allow:/
 
+Sitemap: https://ssangpimaeul.com/sitemap.xml
+Sitemap: http://ssangpimaeul.com/sitemap.xml
 Sitemap: https://www.ssangpimaeul.com/sitemap.xml
 Sitemap: http://www.ssangpimaeul.com/sitemap.xml
