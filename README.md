@@ -1,6 +1,6 @@
-# hwatoo MBTI web page
-# https://skychoi1010.github.io/hwatoo/
-# official page published here -> https://github.com/hwatusignal/ssangpimaeul (domain 만료로 폐쇄)
+# Hwatoo MBTI 웹페이지
+ https://skychoi1010.github.io/hwatoo/
+ official page published here -> https://github.com/hwatusignal/ssangpimaeul (domain 만료로 폐쇄)
 
 
 # Demo
